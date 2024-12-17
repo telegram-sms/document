@@ -12,16 +12,16 @@ hero:
   actions:
     - theme: brand
       text: ユーザーマニュアル
-      link: /ja/user-manual
+      link: /ja_jp/user-manual
     - theme: alt
       text: Q&A
-      link: /ja/q&a
+      link: /ja_jp/q&a
     - theme: alt
       text: プライバシーポリシー
-      link: /ja/privacy-policy
+      link: /ja_jp/privacy-policy
     - theme: alt
       text: 開発者向け
-      link: /ja/
+      link: /ja_jp/develop/manual
 
 features:
   - title: "簡単"

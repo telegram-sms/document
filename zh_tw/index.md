@@ -12,16 +12,16 @@ hero:
   actions:
     - theme: brand
       text: 用户手册
-      link: /zh_cn/user-manual
+      link: /zh_tw/user-manual
     - theme: alt
       text: 问与答
-      link: /zh_cn/q&a
+      link: /zh_tw/q&a
     - theme: alt
       text: 隐私政策
-      link: /zh_cn/privacy-policy
+      link: /zh_tw/privacy-policy
     - theme: alt
       text: 给开发者
-      link: /zh_cn/
+      link: /zh_tw/develop/manual
 
 features:
   - title: "简单"

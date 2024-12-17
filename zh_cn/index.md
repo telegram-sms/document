@@ -21,7 +21,7 @@ hero:
       link: /zh_cn/privacy-policy
     - theme: alt
       text: 给开发者
-      link: /zh_cn/
+      link: /zh_cn/develop/manual
 
 features:
   - title: "简单"

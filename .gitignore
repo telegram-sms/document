@@ -300,5 +300,6 @@ dist
 node_modules
 TODOs.md
 .vscode
-docs/.vitepress/dist/
+.vitepress/dist/
+.vitepress/cache/
 .idea/
