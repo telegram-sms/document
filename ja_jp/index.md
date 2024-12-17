@@ -1,0 +1,33 @@
+---
+# https://vitepress.dev/reference/default-theme-home-page
+layout: home
+
+hero:
+  name: "Telegram SMS"
+  text: "次世代のスマートメイド"
+  tagline: "Telegram SMS の力を借りて、あなたのマルチスマホ生活がこれまで以上に楽になります。"
+  image:
+    src: https://telegram-sms.com/assets/fay-2x.png
+    alt: Fay
+  actions:
+    - theme: brand
+      text: ユーザーマニュアル
+      link: /ja/user-manual
+    - theme: alt
+      text: Q&A
+      link: /ja/q&a
+    - theme: alt
+      text: プライバシーポリシー
+      link: /ja/privacy-policy
+    - theme: alt
+      text: 開発者向け
+      link: /ja/
+
+features:
+  - title: "簡単"
+    details: "SMSの受信と送信、アプリ通知の転送、バッテリーステータスの監視…すべての操作はTelegramボットを通じて行うことができます。"
+  - title: "柔軟"
+    details: "プライベートチャットやグループチャットでボットを使用できます。2台以上のAndroidスマホを持っている場合でも、他の人とボットを共有している場合でも、簡単に対応できます。"
+  - title: "安全"
+    details: "Telegram SMSはTelegramのボットAPIサーバーに直接接続し、サードパーティのサービスは関与しません。"
+---

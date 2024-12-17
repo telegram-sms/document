@@ -11,11 +11,46 @@ export default defineConfig({
     },
     zh_cn: {
       label: '简体中文',
-      lang: 'zh-cn', // 可选，将作为 `lang` 属性添加到 `html` 标签中
-      link: '/zh-cn/', // 默认 /fr/ -- 显示在导航栏翻译菜单上，可以是外部的
+      lang: 'zh_cn',
+      description: "借助 Telegram SMS 的力量，您的多手机生活比以往任何时候都更加轻松。",
+      themeConfig: {
+        i18nRouting: true,
+        sidebar: [
+          {
+            text: '欢迎',
+            items: [
+              { text: '用户手册', link: '/zh_cn/user-manual' },
+              { text: '问与答', link: '/zh_cn/q&a' },
+              { text: '隐私政策', link: '/zh_cn/privacy-policy' }
+            ]
+          }
+        ]
+      }
+    },
+    zh_tw: {
+      label: '繁體中文',
+      lang: 'zh_tw',
+      description: "借助 Telegram SMS 的力量，您的多手機生活比以往任何時候都更加輕鬆。",
+      themeConfig: {
+        i18nRouting: true,
+        sidebar: [
+          {
+            text: '歡迎',
+            items: [
+              { text: '用戶手冊', link: '/zh_tw/user-manual' },
+              { text: '問與答', link: '/zh_tw/q&a' },
+              { text: '隱私政策', link: '/zh_tw/privacy-policy' }
+            ]
+          }
+        ]
+      }
     }
   },
   themeConfig: {
+    i18nRouting: true,
+    search: {
+      provider: 'local'
+    },
     logo: 'https://telegram-sms.com/assets/fay-2x.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -28,8 +63,8 @@ export default defineConfig({
         text: 'Welcome',
         items: [
           { text: 'User manual', link: '/user-manual' },
-          { text: 'Q&A', link: '/q&a' }
-          { text: 'Privacy policy', link: '/q&a' }
+          { text: 'Q&A', link: '/q&a' },
+          { text: 'Privacy policy', link: '/privacy_policy' }
         ]
       }
     ],
