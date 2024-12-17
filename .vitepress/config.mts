@@ -2,13 +2,12 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Telegram SMS User manual",
-  description: "This is the user guide page for telegram sms.",
+  title: "Telegram SMS",
+  description: "With the power of Telegram SMS, your multi-phone life is much easier than before.",
   locales: {
     root: {
       label: 'English',
       lang: 'en',
-      link: '/en-gb/'
     },
     zh_cn: {
       label: '简体中文',
@@ -26,20 +25,21 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Welcome',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'User manual', link: '/user-manual' },
+          { text: 'Q&A', link: '/q&a' }
+          { text: 'Privacy policy', link: '/q&a' }
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/telegram-sms/telegram-sms' }
     ],
     footer: {
-      message: 'Telegram is a trademark of Telegram Messenger LLP.',
-      copyright: 'Copyright © 2018-2024 Reall System LTD'
+      message: 'Released under the <a href="https://github.com/telegram-sms/telegram-sms/blob/master/LICENSE">BSD 3-Clause License</a>.',
+      copyright: 'Copyright © 2018-2024 Reall System LTD, Telegram is a trademark of Telegram Messenger LLP.'
     }
   }
 })
