@@ -1,10 +1,10 @@
 # Q & A
 
-### > I cannot receive any SMS
+## > I cannot receive any SMS
 
 This problem often happens on deeply customized systems, where all the SMS broadcasts will be blocked because of security concerns. The solution now is to set Telegram SMS as the default SMS APP or get the SMS contents by listening to the push notifications.
 
-### > I can receive standard SMS but not SMS containing verify codes
+## > I can receive standard SMS but not SMS containing verify codes
 
 According to some feedbacks, Telegram SMS cannot forward SMS on certain ROMs, including Huawei EMUI and Xiaomi MIUI. We find this is because these two systems protect verification SMS, which makes the verification codes cannot be got from the broadcasts. Following are the solutions:
 
@@ -24,19 +24,19 @@ Security Center > Permission manager > Telegram SMS > Permission > check Notific
 ```
 *: The translation here maybe not accurate. Need to be checked on the phone.
 
-### > Why services cannot work continuously in the background on my Huawei smartphone
+## > Why services cannot work continuously in the background on my Huawei smartphone
 
 Huawei EMUI 9 system introduces a new power manager called `Power Genius`. It will check and force stop the APPs that not included in Huawei's whitelist (e.g., Wechat and QQ are in the whitelist). You need to kill the power manager by ADB to make sure Telegram SMS can work on your phone, but it may cause problems like more power consumption and higher temperature if you do so.
 
 In other versions of EMUI, you can change the battery optimization settings to control and make sure APPs can run properly. Please refer to https://dontkillmyapp.com/huawei to find the instructions and more information.
 
-### > I want to close the notification on the Notification Drawer
+## > I want to close the notification on the Notification Drawer
 
 Due to the [behavior changes](https://developer.android.com/about/versions/oreo/android-8.0-changes#back-all) in Android O, we cannot run Telegram SMS service in the background silently.
 
 You can refer to `Choose how you're notified > Turn notifications on or off for certain apps` section in [Control notifications on Android](https://support.google.com/android/answer/9079661?hl=en) by Google to find out how to close all the notifications of Telegram SMS.
 
-### > I want to change the API server address
+## > I want to change the API server address
 
 We will NOT provide any function to change the API server address in the APP.
 

@@ -11,17 +11,17 @@ hero:
     alt: Fay
   actions:
     - theme: brand
-      text: User Maunal
-      link: /markdown-examples
+      text: Download
+      link: https://github.com/telegram-sms/telegram-sms/releases
+    - theme: alt
+      text: User Manual
+      link: /user-manual
     - theme: alt
       text: Q&A
       link: /q&a
     - theme: alt
       text: Privacy Policy
       link: /privacy-policy
-    - theme: alt
-      text: For Developers
-      link: /develop/manual
 
 features:
   - title: Easy

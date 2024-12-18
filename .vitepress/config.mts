@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  srcDir: 'docs',
   title: "Telegram SMS",
   description: "With the power of Telegram SMS, your multi-phone life is much easier than before.",
   locales: {
@@ -106,11 +107,17 @@ export default defineConfig({
     },
     sidebar: [
       {
-        text: 'Welcome',
+        text: 'User',
         items: [
           { text: 'User manual', link: '/user-manual' },
           { text: 'Q&A', link: '/q&a' },
-          { text: 'Privacy policy', link: '/privacy_policy' }
+          { text: 'Privacy policy', link: '/privacy-policy' }
+        ]
+      },
+      {
+        text: 'Developer',
+        items: [
+          { text: 'Development Manual', link: '/develop/manual' }
         ]
       }
     ],
