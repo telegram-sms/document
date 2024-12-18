@@ -19,7 +19,14 @@
                 <div v-for="(e, i) in theme.footerNav" :key="i">
                     <h3 class="footerSectionTitle">{{ e.title }}</h3>
                     <ul class="footerSectionList">
-                        <li v-for="(f, j) in e.items"><a class="footerSectionLink" :href="f.link" target="_blank">{{ f.text }}</a></li>
+                        <li v-for="(f, j) in e.items">
+                            <template v-if="isExternalLink(f.link)">
+                                <a class="footerSectionLink" :href="f.link" target="_blank">{{ f.text }}</a>
+                            </template>
+                            <template v-else>
+                                <VPLink class="footerSectionLink" :href="f.link">{{ f.text }}</VPLink>
+                            </template>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -33,7 +40,7 @@
 
 <script lang="ts" setup>
 import { useData } from "vitepress";
-import { useSidebar } from "vitepress/theme";
+import { useSidebar, VPLink } from "vitepress/theme";
 import { ExtendedConfig } from "../theme/types";
 
 const { hasSidebar } = useSidebar();
@@ -41,6 +48,8 @@ const { hasSidebar } = useSidebar();
 const { theme, frontmatter, lang, page } = useData<ExtendedConfig>();
 const message = theme.value?.footer?.message;
 const copyright = theme.value?.footer?.copyright;
+
+const isExternalLink = (link: string) => /^https?:\/\//.test(link)
 </script>
 
 <style scoped>
@@ -86,7 +95,7 @@ const copyright = theme.value?.footer?.copyright;
 @media (min-width: 1024px) {
     .footerSection {
         grid-template-columns: repeat(4, 1fr);
-        //gap: 16px;
+        /* gap: 16px; */
     }
 }
 
@@ -140,8 +149,7 @@ const copyright = theme.value?.footer?.copyright;
     color: var(--vp-c-text-2);
 }
 
-.footerMessage {
-}
+/* .footerMessage {} */
 
 .footerCopyright {
     margin-top: 4px;

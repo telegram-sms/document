@@ -62,6 +62,32 @@ export default defineConfigWithTheme<ExtendedConfig>({
                         ],
                     },
                 ],
+                footerNav: [
+                    {
+                        title: "项目",
+                        items: [
+                            { text: "Telegram SMS", link: "https://github.com/telegram-sms/telegram-sms" },
+                            { text: "Telegram SMS Compat", link: "https://github.com/telegram-sms/telegram-sms-compat" },
+                            { text: "Telegram SMS 中国版", link: "https://github.com/telegram-sms/telegram-sms-china" },
+                            { text: "Telegram RC", link: "https://github.com/telegram-sms/telegram-rc" },
+                        ],
+                    },
+                    {
+                        title: "在线工具",
+                        items: [
+                            { text: "用户手册", link: "/zh_cn/user-manual" },
+                            { text: "配置文件生成器", link: "https://qrcode.telegram-sms.com/" },
+                        ],
+                    },
+                    {
+                        title: "社区",
+                        items: [
+                            { text: "GitHub", link: "https://github.com/telegram-sms" },
+                            { text: "Telegram 频道", link: "https://t.me/tg_sms_changelog_eng" },
+                            { text: "论坛", link: "https://reall.uk" },
+                        ],
+                    },
+                ],
             },
         },
         zh_tw: {
@@ -138,7 +164,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
             {
                 title: "Tools",
                 items: [
-                    { text: "Documentation", link: "https://guide.telegram-sms.com/" },
+                    { text: "Documentation", link: "/user-manual" },
                     { text: "Config Generator", link: "https://qrcode.telegram-sms.com/" },
                 ],
             },
