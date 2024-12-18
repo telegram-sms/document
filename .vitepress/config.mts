@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { fileURLToPath, URL } from 'node:url'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -125,5 +126,17 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/telegram-sms/telegram-sms' }
     ]
+  },
+  vite: {
+    resolve: {
+      alias: [
+        {
+          find: /^.*\/VPFooter\.vue$/,
+          replacement: fileURLToPath(
+              new URL('./components/CustomFooter.vue', import.meta.url)
+          )
+        }
+      ]
+    }
   }
 })
