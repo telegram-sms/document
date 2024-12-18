@@ -42,7 +42,6 @@ export default defineConfigWithTheme<ExtendedConfig>({
                         items: [
                             { text: "Telegram SMS", link: "https://github.com/telegram-sms/telegram-sms" },
                             { text: "Telegram SMS Compat", link: "https://github.com/telegram-sms/telegram-sms-compat" },
-                            { text: "Telegram SMS China", link: "https://github.com/telegram-sms/telegram-sms-china" },
                             { text: "Telegram RC", link: "https://github.com/telegram-sms/telegram-rc" },
                         ],
                     },
@@ -94,8 +93,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                         items: [
                             { text: "Telegram SMS", link: "https://github.com/telegram-sms/telegram-sms" },
                             { text: "Telegram SMS Compat", link: "https://github.com/telegram-sms/telegram-sms-compat" },
-                            { text: "Telegram SMS 中国版", link: "https://github.com/telegram-sms/telegram-sms-china" },
-                            { text: "Telegram RC", link: "https://github.com/telegram-sms/telegram-rc" },
+                            { text: "Telegram Remote Control", link: "https://github.com/telegram-sms/telegram-rc" },
                         ],
                     },
                     {
@@ -146,8 +144,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                         items: [
                             { text: "Telegram SMS", link: "https://github.com/telegram-sms/telegram-sms" },
                             { text: "Telegram SMS Compat", link: "https://github.com/telegram-sms/telegram-sms-compat" },
-                            { text: "Telegram SMS 中國版", link: "https://github.com/telegram-sms/telegram-sms-china" },
-                            { text: "Telegram RC", link: "https://github.com/telegram-sms/telegram-rc" },
+                            { text: "Telegram Remote Control", link: "https://github.com/telegram-sms/telegram-rc" },
                         ],
                     },
                     {
@@ -209,8 +206,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                 items: [
                     { text: "Telegram SMS", link: "https://github.com/telegram-sms/telegram-sms" },
                     { text: "Telegram SMS Compat", link: "https://github.com/telegram-sms/telegram-sms-compat" },
-                    { text: "Telegram SMS China", link: "https://github.com/telegram-sms/telegram-sms-china" },
-                    { text: "Telegram RC", link: "https://github.com/telegram-sms/telegram-rc" },
+                    { text: "Telegram Remote Control", link: "https://github.com/telegram-sms/telegram-rc" },
                 ],
             },
             {
