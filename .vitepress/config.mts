@@ -36,6 +36,32 @@ export default defineConfigWithTheme<ExtendedConfig>({
                         ],
                     },
                 ],
+                footerNav: [
+                    {
+                        title: "プロジェクト",
+                        items: [
+                            { text: "Telegram SMS", link: "https://github.com/telegram-sms/telegram-sms" },
+                            { text: "Telegram SMS Compat", link: "https://github.com/telegram-sms/telegram-sms-compat" },
+                            { text: "Telegram SMS China", link: "https://github.com/telegram-sms/telegram-sms-china" },
+                            { text: "Telegram RC", link: "https://github.com/telegram-sms/telegram-rc" },
+                        ],
+                    },
+                    {
+                        title: "ツール",
+                        items: [
+                            { text: "ユーザーマニュアル", link: "/ja_jp/user-manual" },
+                            { text: "設定ジェネレーター", link: "https://qrcode.telegram-sms.com/" },
+                        ],
+                    },
+                    {
+                        title: "コミュニティ",
+                        items: [
+                            { text: "GitHub", link: "https://github.com/telegram-sms" },
+                            { text: "Telegram チャンネル", link: "https://t.me/tg_sms_changelog_eng" },
+                            { text: "フォーラム", link: "https://reall.uk" },
+                        ],
+                    },
+                ],
             },
         },
         zh_cn: {
@@ -111,6 +137,32 @@ export default defineConfigWithTheme<ExtendedConfig>({
                             { text: "用戶手冊", link: "/zh_tw/user-manual" },
                             { text: "問與答", link: "/zh_tw/q&a" },
                             { text: "隱私政策", link: "/zh_tw/privacy-policy" },
+                        ],
+                    },
+                ],
+                footerNav: [
+                    {
+                        title: "專案",
+                        items: [
+                            { text: "Telegram SMS", link: "https://github.com/telegram-sms/telegram-sms" },
+                            { text: "Telegram SMS Compat", link: "https://github.com/telegram-sms/telegram-sms-compat" },
+                            { text: "Telegram SMS 中國版", link: "https://github.com/telegram-sms/telegram-sms-china" },
+                            { text: "Telegram RC", link: "https://github.com/telegram-sms/telegram-rc" },
+                        ],
+                    },
+                    {
+                        title: "線上工具",
+                        items: [
+                            { text: "用戶手冊", link: "/zh_tw/user-manual" },
+                            { text: "配置檔案產生器", link: "https://qrcode.telegram-sms.com/" },
+                        ],
+                    },
+                    {
+                        title: "社群",
+                        items: [
+                            { text: "GitHub", link: "https://github.com/telegram-sms" },
+                            { text: "Telegram 頻道", link: "https://t.me/tg_sms_changelog_eng" },
+                            { text: "論壇", link: "https://reall.uk" },
                         ],
                     },
                 ],
