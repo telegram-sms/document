@@ -100,7 +100,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                         title: "在线工具",
                         items: [
                             { text: "用户手册", link: "/zh_cn/user-manual" },
-                            { text: "配置文件生成器", link: "https://qrcode.telegram-sms.com/" },
+                            { text: "配置生成", link: "https://qrcode.telegram-sms.com/" },
                         ],
                     },
                     {
