@@ -7,6 +7,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
     srcDir: "docs",
     title: "Telegram SMS",
     description: "With the power of Telegram SMS, your multi-phone life is much easier than before.",
+    head: [['link', { rel: 'icon',type:'image/svg+xml', href: '/logo.svg' }]],
     locales: {
         root: {
             label: "English",
