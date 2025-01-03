@@ -21,7 +21,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                 i18nRouting: true,
                 nav: [
                     { text: "ホーム", link: "/ja_jp" },
-                    { text: "設定ジェネレーター", link: "https://qrcode.telegram-sms.com/" },
+                    { text: "設定ジェネレーター", link: "https://config.telegram-sms.com/" },
                 ],
                 footer: {
                     message: " <a href=\"https://github.com/telegram-sms/telegram-sms/blob/master/LICENSE\">BSD 3-Clause License</a> の下でリリースされています。",
@@ -72,7 +72,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                 i18nRouting: true,
                 nav: [
                     { text: "主页", link: "/" },
-                    { text: "配置生成", link: "https://qrcode.telegram-sms.com/" },
+                    { text: "配置生成", link: "https://config.telegram-sms.com/" },
                 ],
                 footer: {
                     message: "在 <a href=\"https://github.com/telegram-sms/telegram-sms/blob/master/LICENSE\">BSD 3-Clause License</a> 许可下发布。",
@@ -108,7 +108,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                         title: "社区",
                         items: [
                             { text: "GitHub", link: "https://github.com/telegram-sms" },
-                            { text: "Telegram 频道", link: "https://t.me/tg_sms_changelog_eng" },
+                            { text: "Telegram 频道", link: "https://t.me/tg_sms_changelog" },
                             { text: "论坛", link: "https://reall.uk" },
                         ],
                     },
@@ -123,7 +123,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                 i18nRouting: true,
                 nav: [
                     { text: "主頁", link: "/" },
-                    { text: "配置生成", link: "https://qrcode.telegram-sms.com/" },
+                    { text: "配置生成", link: "https://config.telegram-sms.com/" },
                 ],
                 footer: {
                     message: "在 <a href=\"https://github.com/telegram-sms/telegram-sms/blob/master/LICENSE\">BSD 3-Clause License</a> 許可下發布。",
@@ -159,7 +159,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                         title: "社群",
                         items: [
                             { text: "GitHub", link: "https://github.com/telegram-sms" },
-                            { text: "Telegram 頻道", link: "https://t.me/tg_sms_changelog_eng" },
+                            { text: "Telegram 頻道", link: "https://t.me/tg_sms_changelog" },
                             { text: "論壇", link: "https://reall.uk" },
                         ],
                     },
@@ -176,7 +176,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: "Home", link: "/" },
-            { text: "Config Generator", link: "https://qrcode.telegram-sms.com/" },
+            { text: "Config Generator", link: "https://config.telegram-sms.com/" },
         ],
         footer: {
             message: "Released under the <a href=\"https://github.com/telegram-sms/telegram-sms/blob/master/LICENSE\">BSD 3-Clause License</a>.",

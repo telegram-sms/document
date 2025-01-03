@@ -7,7 +7,7 @@ hero:
   text: "The next generation of intelligent maid"
   tagline: "With the power of Telegram SMS, your multi-phone life is much easier than before."
   image:
-    src: https://telegram-sms.com/assets/fay-2x.png
+    src: /20250103-052244.webp
     alt: Fay
   actions:
     - theme: brand
