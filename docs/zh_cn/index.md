@@ -7,10 +7,13 @@ hero:
   text: "下一代智能女仆"
   tagline: "借助 Telegram SMS 的力量，您的多手机生活比以往任何时候都更加轻松。"
   image:
-    src: https://telegram-sms.com/assets/fay-2x.png
+    src: /20250103-052244.webp
     alt: Fay
   actions:
     - theme: brand
+      text: 下载
+      link: https://github.com/telegram-sms/telegram-sms/releases
+    - theme: alt
       text: 用户手册
       link: /zh_cn/user-manual
     - theme: alt

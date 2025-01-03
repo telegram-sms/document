@@ -7,10 +7,13 @@ hero:
   text: "次世代のスマートメイド"
   tagline: "Telegram SMS の力を借りて、あなたのマルチスマホ生活がこれまで以上に楽になります。"
   image:
-    src: https://telegram-sms.com/assets/fay-2x.png
+    src: /20250103-052244.webp
     alt: Fay
   actions:
     - theme: brand
+      text: ダウンロード
+      link: https://github.com/telegram-sms/telegram-sms/releases
+    - theme: alt
       text: ユーザーマニュアル
       link: /ja_jp/user-manual
     - theme: alt
