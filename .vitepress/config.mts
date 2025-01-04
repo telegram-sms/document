@@ -7,11 +7,68 @@ export default defineConfigWithTheme<ExtendedConfig>({
     srcDir: "docs",
     title: "Telegram SMS",
     description: "With the power of Telegram SMS, your multi-phone life is much easier than before.",
-    head: [['link', { rel: 'icon',type:'image/svg+xml', href: '/logo.svg' }]],
+    head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]],
     locales: {
         root: {
             label: "English",
             lang: "en",
+        },
+        es_es: {
+            label: "Español",
+            lang: "es_es",
+            description: "Con la ayuda de Telegram SMS, su vida con múltiples teléfonos es más fácil que nunca.",
+            themeConfig: {
+                i18nRouting: true,
+                nav: [
+                    { text: "Inicio", link: "/" },
+                    { text: "Generador de configuración", link: "https://config.telegram-sms.com/" },
+                ],
+                footer: {
+                    message: "Publicado bajo la <a href=\"https://github.com/telegram-sms/telegram-sms/blob/master/LICENSE\">Licencia BSD de 3 cláusulas</a>.",
+                    copyright: "Copyright © 2018-2025 Reall System LTD, Telegram es una marca registrada de Telegram Messenger LLP.",
+                },
+                sidebar: [
+                    {
+                        text: "Usuarios",
+                        items: [
+                            { text: "Manual del usuario", link: "/es_es/user-manual" },
+                            { text: "Preguntas y respuestas", link: "/es_es/Q&A" },
+                            { text: "Política de privacidad", link: "/es_es/privacy-policy" },
+                        ],
+                    },
+                    {
+                        text: "Desarrolladores",
+                        items: [
+                            { text: "Guía de desarrollo", link: "/es_es/develop/manual" },
+                        ],
+                    },
+                ],
+                footerNav: [
+                    {
+                        title: "Proyectos",
+                        items: [
+                            { text: "Telegram SMS", link: "https://github.com/telegram-sms/telegram-sms" },
+                            { text: "Telegram SMS Compat", link: "https://github.com/telegram-sms/telegram-sms-compat" },
+                            { text: "Telegram Remote Control", link: "https://github.com/telegram-sms/telegram-rc" },
+                        ],
+                    },
+                    {
+                        title: "Herramientas en línea",
+                        items: [
+                            { text: "Manual del usuario", link: "/es/user-manual" },
+                            { text: "Generador de archivos de configuración", link: "https://qrcode.telegram-sms.com/" },
+                        ],
+                    },
+                    {
+                        title: "Comunidad",
+                        items: [
+                            { text: "GitHub", link: "https://github.com/telegram-sms" },
+                            { text: "Canal de Telegram", link: "https://t.me/tg_sms_changelog" },
+                            { text: "Foro", link: "https://reall.uk" },
+                        ],
+                    },
+                ],
+            },
         },
         ja_jp: {
             label: "日本語",
