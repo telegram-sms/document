@@ -18,7 +18,7 @@ hero:
       link: /ja_jp/user-manual
     - theme: alt
       text: Q&A
-      link: /ja_jp/q&a
+      link: /ja_jp/Q&A
     - theme: alt
       text: プライバシーポリシー
       link: /ja_jp/privacy-policy

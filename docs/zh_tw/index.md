@@ -18,7 +18,7 @@ hero:
       link: /zh_tw/user-manual
     - theme: alt
       text: 问与答
-      link: /zh_tw/q&a
+      link: /zh_tw/Q&A
     - theme: alt
       text: 隐私政策
       link: /zh_tw/privacy-policy

@@ -18,7 +18,7 @@ hero:
       link: /user-manual
     - theme: alt
       text: Q&A
-      link: /q&a
+      link: /Q&A
     - theme: alt
       text: Privacy Policy
       link: /privacy-policy

@@ -32,7 +32,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                         text: "ユーザー",
                         items: [
                             { text: "ユーザーマニュアル", link: "/ja_jp/user-manual" },
-                            { text: "Q&A", link: "/ja_jp/q&a" },
+                            { text: "Q&A", link: "/ja_jp/Q&A" },
                             { text: "個人情報保護方針", link: "/ja_jp/privacy-policy" },
                         ],
                     },
@@ -89,7 +89,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                         text: "个人用户",
                         items: [
                             { text: "用户手册", link: "/zh_cn/user-manual" },
-                            { text: "问与答", link: "/zh_cn/q&a" },
+                            { text: "问与答", link: "/zh_cn/Q&A" },
                             { text: "隐私政策", link: "/zh_cn/privacy-policy" },
                         ],
                     },
@@ -146,7 +146,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                         text: "個人用戶",
                         items: [
                             { text: "用戶手冊", link: "/zh_tw/user-manual" },
-                            { text: "問與答", link: "/zh_tw/q&a" },
+                            { text: "問與答", link: "/zh_tw/Q&A" },
                             { text: "隱私政策", link: "/zh_tw/privacy-policy" },
                         ],
                     },
@@ -205,7 +205,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                 text: "User",
                 items: [
                     { text: "User manual", link: "/user-manual" },
-                    { text: "Q&A", link: "/q&a" },
+                    { text: "Q&A", link: "/Q&A" },
                     { text: "Privacy policy", link: "/privacy-policy" },
                 ],
             },
