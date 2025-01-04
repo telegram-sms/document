@@ -34,4 +34,3 @@ features:
   - title: Secure
     details: Telegram SMS connects with Telegram's bot API server directly, no 3rd-party services involved.
 ---
-

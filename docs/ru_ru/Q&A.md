@@ -1,48 +1,48 @@
-# Preguntas y Respuestas
-### > No puedo recibir ningún SMS
+# Вопросы и ответы
+### > Я не могу получать SMS
 
-Este problema suele ocurrir en sistemas de teléfonos profundamente personalizados, generalmente debido a problemas de seguridad que bloquean todas las transmisiones de SMS. La solución actual a este problema es configurar Telegram SMS como la aplicación de SMS predeterminada o escuchar las notificaciones push para obtener el contenido del SMS.
+Эта проблема обычно возникает на сильно кастомизированных системах телефонов, где по соображениям безопасности блокируются все SMS-трансляции. Текущее решение этой проблемы - настроить Telegram SMS как приложение по умолчанию для SMS или использовать метод прослушивания push-уведомлений для получения содержимого SMS.
 
-### > Puedo recibir SMS normales, pero no puedo recibir SMS con códigos de verificación
+### > Я могу получать обычные SMS, но не могу получать SMS с кодами подтверждения
 
-**¡Advertencia de riesgo! Reenviar códigos de verificación puede comprometer su privacidad personal y la seguridad de su cuenta. Si comprende este riesgo, continúe con las siguientes operaciones.**
+**Предупреждение о риске! Пересылка кодов подтверждения может привести к компрометации вашей личной конфиденциальности и безопасности аккаунта. Если вы понимаете этот риск, продолжайте следующие действия.**
 
-Recientemente, algunos usuarios han informado que Telegram SMS no puede reenviar correctamente los SMS de tipo notificación. Las ROM afectadas incluyen Huawei EMUI y Xiaomi MIUI. Estos sistemas proporcionan funciones de protección de seguridad para los SMS de verificación, lo que impide que los códigos de verificación se obtengan correctamente a través de la transmisión. A continuación se presentan las soluciones.
+Недавно некоторые пользователи сообщили, что Telegram SMS не может правильно пересылать уведомления типа SMS. Затронутые ROM включают Huawei EMUI и Xiaomi MIUI. Эти системы предоставляют функции защиты безопасности для SMS с кодами подтверждения, что препятствует правильному получению кодов подтверждения через трансляцию. Вот решения:
 
 Huawei EMUI：
 ```
-Mensajes > Más > Configuración > Avanzado > Desactivar la protección de seguridad del código de verificación.
+Сообщения > Еще > Настройки > Дополнительно > Отключить защиту безопасности кода подтверждения.
 
 via:https://club.huawei.com/thread-17770781-1-1.html
 ```
 
 Xiaomi MIUI：
 ```
-Centro de seguridad > Gestión de permisos > Telegram SMS > Permisos > Seleccionar SMS de tipo notificación
+Центр безопасности > Управление разрешениями > Telegram SMS > Разрешения > Выбрать уведомления типа SMS
 ```
 
-### > ¿Por qué el servicio en segundo plano de mi teléfono Huawei no puede seguir funcionando?
+### > Почему служба в фоновом режиме на моем телефоне Huawei не может продолжать работать?
 
-En el sistema Huawei EMUI9, se ha incorporado una nueva herramienta de gestión de energía llamada `Power Genius`. Esta herramienta verifica automáticamente los programas que se ejecutan en segundo plano y, si no están en la lista blanca de Huawei (por ejemplo, WeChat, QQ), los detiene forzosamente. Necesita desactivar completamente la ejecución de este programa a través de ADB, lo que garantizará que su teléfono pueda ejecutar Telegram SMS correctamente, pero puede causar problemas de consumo de batería y sobrecalentamiento.
+В системе Huawei EMUI9 встроен новый инструмент управления энергопотреблением под названием `Power Genius`. Этот инструмент автоматически проверяет программы, работающие в фоновом режиме, и, если они не находятся в белом списке Huawei (например, WeChat, QQ), принудительно останавливает их. Вам нужно полностью отключить выполнение этой программы через ADB, что обеспечит правильную работу Telegram SMS на вашем телефоне, но может вызвать проблемы с расходом батареи и перегревом.
 
-En otras versiones del sistema EMUI, puede controlar y garantizar el funcionamiento normal del programa configurando la información de optimización de la batería. Consulte el siguiente enlace para obtener más detalles.
+В других версиях системы EMUI вы можете контролировать и гарантировать нормальную работу программы, настроив информацию об оптимизации батареи. Подробности смотрите по следующей ссылке:
 
-Pasos de operación e información relacionada: https://dontkillmyapp.com/huawei
+Шаги и связанная информация: https://dontkillmyapp.com/huawei
 
-### > Quiero desactivar las notificaciones en la barra de notificaciones
+### > Я хочу отключить уведомления в строке уведомлений
 
-Debido a los [cambios de comportamiento](https://developer.android.com/about/versions/oreo/android-8.0-changes?hl=es-419#back-all) en Android O, no podemos ejecutar el servicio de Telegram SMS en segundo plano de manera silenciosa.
+Из-за [изменений в поведении](https://developer.android.com/about/versions/oreo/android-8.0-changes?hl=ru) в Android O мы не можем тихо выполнять службу Telegram SMS в фоновом режиме.
 
-Puede consultar el documento proporcionado por Google "Controlar las notificaciones que se muestran en tu dispositivo Android" en la sección `Elegir cómo recibir notificaciones > Activar o desactivar las notificaciones de ciertas aplicaciones` para desactivar todas las notificaciones de Telegram SMS en la barra de notificaciones.
+Вы можете ознакомиться с документом, предоставленным Google, "Управление уведомлениями, отображаемыми на вашем устройстве Android" в разделе `Выбор способа получения уведомлений > Включение или отключение уведомлений для определенных приложений`, чтобы отключить все уведомления Telegram SMS в строке уведомлений.
 
-Información relacionada: https://support.google.com/android/answer/9079661?hl=es-419
+Связанная информация: https://support.google.com/android/answer/9079661?hl=ru
 
-### > Quiero cambiar la dirección del servidor API
+### > Я хочу изменить адрес сервера API
 
-No proporcionamos ninguna función de configuración para cambiar la dirección del servidor API en el programa.
+Мы не предоставляем никаких функций настройки для изменения адреса сервера API в программе.
 
-**Esto se debe a consideraciones de privacidad y seguridad de las comunicaciones. Cambiar la dirección del API es similar a un secuestro GSM + sniffing de SMS, lo que puede causar pérdidas financieras.**
+**Это связано с соображениями конфиденциальности и безопасности связи. Изменение адреса API аналогично перехвату GSM + sniffing SMS, что может привести к финансовым потерям.**
 
-Puede usar el método de proxy SNI para proxy de manera segura `api.telegram.org`, lo que evitará que los paquetes de datos se descompriman durante la transmisión y protegerá los paquetes de datos de ser obtenidos por terceros. Puede usar el módulo Stream de Nginx para implementar esta función. Este módulo opera en la capa 4 del modelo OSI y puede ejecutarse simultáneamente con servicios que operan en la capa 7. Esto garantizará que pueda alojar un sitio web mientras usa el proxy SNI. También puede usar Sniproxy para lograr la misma función.
+Вы можете использовать метод прокси SNI для безопасного проксирования `api.telegram.org`, что предотвратит распаковку пакетов данных во время передачи и защитит пакеты данных от получения третьими сторонами. Вы можете использовать модуль Stream Nginx для реализации этой функции. Этот модуль работает на уровне 4 модели OSI и может работать одновременно с сервисами, работающими на уровне 7. Это обеспечит возможность размещения веб-сайта при использовании прокси SNI. Вы также можете использовать Sniproxy для достижения той же функции.
 
-Si comprende los riesgos de cambiar la dirección del API pero aún desea realizar esta operación, le proporcionaremos un script de compilación basado en GitHub Action. Puede hacer un fork de este repositorio y realizar modificaciones. GitHub Action compilará automáticamente cuando realice un commit y emitirá una versión de lanzamiento utilizando la firma de prueba incorporada. Tenga en cuenta que esta firma es diferente de la utilizada en la versión original, por lo que deberá desinstalar la aplicación original e instalar la nueva versión.
+Если вы понимаете риски изменения адреса API, но все же хотите выполнить эту операцию, мы предоставим вам скрипт компиляции на основе GitHub Action. Вы можете сделать форк этого репозитория и внести изменения. GitHub Action автоматически скомпилирует при коммите и выпустит версию с использованием встроенной тестовой подписи. Обратите внимание, что эта подпись отличается от используемой в оригинальной версии, поэтому вам нужно будет удалить оригинальное приложение и установить новую версию.

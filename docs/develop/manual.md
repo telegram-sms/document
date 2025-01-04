@@ -6,7 +6,6 @@
 
 git allows tons of flexibility in the workflow of how people work together, so it is important to clearly define the workflow of this community so that people know what to expect. The git workflow the Telegram SMS app uses is relatively simple and based on the very common workflow established by github.com, gitlab.com and others like it. Here’s a break down of what that means:
 
-- all development work happens in the `nightly` branch
 - code is submitted for inclusion via Merge Requests (MRs)
 - The master branch must not be merged with any branch that has not been tested on the actual machine
 - Merge Requests for a stable release branch can include commits from master

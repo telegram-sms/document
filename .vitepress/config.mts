@@ -70,6 +70,63 @@ export default defineConfigWithTheme<ExtendedConfig>({
                 ],
             },
         },
+        ru_ru: {
+            label: "Русский",
+            lang: "ru_ru",
+            description: "С помощью Telegram SMS ваша жизнь с несколькими телефонами станет проще, чем когда-либо.",
+            themeConfig: {
+                i18nRouting: true,
+                nav: [
+                    { text: "Главная", link: "/" },
+                    { text: "Генератор конфигурации", link: "https://config.telegram-sms.com/" },
+                ],
+                footer: {
+                    message: "Опубликовано под <a href=\"https://github.com/telegram-sms/telegram-sms/blob/master/LICENSE\">лицензией BSD с 3 пунктами</a>.",
+                    copyright: "Copyright © 2018-2025 Reall System LTD, Telegram является зарегистрированной торговой маркой Telegram Messenger LLP.",
+                },
+                sidebar: [
+                    {
+                        text: "Пользователи",
+                        items: [
+                            { text: "Руководство пользователя", link: "/ru/user-manual" },
+                            { text: "Вопросы и ответы", link: "/ru/Q&A" },
+                            { text: "Политика конфиденциальности", link: "/ru/privacy-policy" },
+                        ],
+                    },
+                    {
+                        text: "Разработчики",
+                        items: [
+                            { text: "Руководство по разработке", link: "/ru/develop/manual" },
+                        ],
+                    },
+                ],
+                footerNav: [
+                    {
+                        title: "Проекты",
+                        items: [
+                            { text: "Telegram SMS", link: "https://github.com/telegram-sms/telegram-sms" },
+                            { text: "Telegram SMS Compat", link: "https://github.com/telegram-sms/telegram-sms-compat" },
+                            { text: "Telegram Remote Control", link: "https://github.com/telegram-sms/telegram-rc" },
+                        ],
+                    },
+                    {
+                        title: "Онлайн-инструменты",
+                        items: [
+                            { text: "Руководство пользователя", link: "/ru/user-manual" },
+                            { text: "Генератор конфигурационных файлов", link: "https://qrcode.telegram-sms.com/" },
+                        ],
+                    },
+                    {
+                        title: "Сообщество",
+                        items: [
+                            { text: "GitHub", link: "https://github.com/telegram-sms" },
+                            { text: "Канал Telegram", link: "https://t.me/tg_sms_changelog" },
+                            { text: "Форум", link: "https://reall.uk" },
+                        ],
+                    },
+                ],
+            },
+        },
         ja_jp: {
             label: "日本語",
             lang: "ja_jp",

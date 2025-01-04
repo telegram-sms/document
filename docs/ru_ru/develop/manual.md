@@ -1,49 +1,47 @@
-# Manual de Desarrollo
+# Руководство по разработке
 
-**Este documento está destinado a los desarrolladores para compilar con el código fuente. Para el contenido que no se entienda en la documentación o si encuentra un error, asegúrese de usar Google Search.**
+**Этот документ предназначен для разработчиков, чтобы компилировать исходный код. Если вы не понимаете содержание документации или столкнулись с ошибкой, обязательно используйте Google Поиск.**
 
-## ¿Cómo está estructurado el flujo de trabajo de git de Telegram SMS?
+## Как структурирован рабочий процесс git в Telegram SMS?
 
-git permite mucha flexibilidad en el flujo de trabajo de cómo las personas trabajan juntas, por lo que es importante definir claramente el flujo de trabajo de esta comunidad para que las personas sepan qué esperar. El flujo de trabajo de git que utiliza la aplicación Telegram SMS es relativamente simple y se basa en el flujo de trabajo muy común establecido por github.com, gitlab.com y otros similares. Aquí hay un desglose de lo que eso significa:
+git позволяет гибко настраивать рабочий процесс, поэтому важно четко определить рабочий процесс этого сообщества, чтобы люди знали, чего ожидать. Рабочий процесс git, используемый в приложении Telegram SMS, относительно прост и основан на очень распространенном рабочем процессе, установленном github.com, gitlab.com и другими подобными. Вот его разбор:
 
-- el código se envía para su inclusión a través de Solicitudes de Fusión (MRs)
-- La rama master no debe fusionarse con ninguna rama que no haya sido probada en la máquina real
-- Las Solicitudes de Fusión para una rama de lanzamiento estable pueden incluir commits de master
-- El paquete de compilación proporcionado al público puede compilarse utilizando la canalización de github.
+- код отправляется для включения через запросы на слияние (MRs)
+- Ветку master нельзя сливать с любой веткой, которая не была протестирована на реальной машине
+- Запросы на слияние для стабильной ветки могут включать коммиты из master
+- Пакет компиляции, предоставляемый общественности, может быть скомпилирован с использованием конвейера github.
 
-## Cómo compilar el proyecto
+## Как скомпилировать проект
 
-#### 1. descargar el último código fuente
-
+#### 1. загрузите последний исходный код
 ```
 git clone https://github.com/telegram-sms/telegram-sms.git telegram-sms
 cd telegram-sms
 git submodule update --init --recursive
 ```
 
-#### 2. configurar el entorno de compilación
+#### 2. настройте среду компиляции
 
-Puede compilar este proyecto refiriéndose al script de compilación mostrado en [android.yml](https://github.com/telegram-sms/telegram-sms/blob/master/.github/workflows/android.yml)
+Вы можете скомпилировать этот проект, ссылаясь на скрипт компиляции, показанный в [android.yml](https://github.com/telegram-sms/telegram-sms/blob/master/.github/workflows/android.yml)
 
-Configure las variables de entorno, tenga cuidado de modificar `ANDROID_HOME` para su directorio `Android SDK`
+Настройте переменные среды, обязательно измените `ANDROID_HOME` на ваш каталог `Android SDK`
 
 ```
 export ANDROID_HOME=<Android SDK>
-export KEYSTORE_PASSWORD=<Su contraseña>
-export ALIAS_PASSWORD=<Su contraseña>
-export ALIAS_NAME=<Su nombre de alias>
+export KEYSTORE_PASSWORD=<Ваш пароль>
+export ALIAS_PASSWORD=<Ваш пароль>
+export ALIAS_NAME=<Ваше имя псевдонима>
 export VERSION_CODE=1
 export VERSION_NAME="Debug"
 ./gradlew app:copy_language_pack
 ```
 
-#### 3. ejecutar la compilación
-
+#### 3. запустите компиляцию
 ```
 ./gradlew assembleDebug
 ```
 
-O use el siguiente comando para generar la versión `release`
+Или используйте следующую команду для создания версии `release`
 
 ```
 ./gradlew assembleRelease
