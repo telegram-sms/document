@@ -20,7 +20,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
             themeConfig: {
                 i18nRouting: true,
                 nav: [
-                    { text: "Inicio", link: "/" },
+                    { text: "Inicio", link: "/es_es/" },
                     { text: "Generador de configuración", link: "https://config.telegram-sms.com/" },
                 ],
                 footer: {
@@ -77,7 +77,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
             themeConfig: {
                 i18nRouting: true,
                 nav: [
-                    { text: "Главная", link: "/" },
+                    { text: "Главная", link: "/ru_ru/" },
                     { text: "Генератор конфигурации", link: "https://config.telegram-sms.com/" },
                 ],
                 footer: {
@@ -88,15 +88,15 @@ export default defineConfigWithTheme<ExtendedConfig>({
                     {
                         text: "Пользователи",
                         items: [
-                            { text: "Руководство пользователя", link: "/ru/user-manual" },
-                            { text: "Вопросы и ответы", link: "/ru/Q&A" },
-                            { text: "Политика конфиденциальности", link: "/ru/privacy-policy" },
+                            { text: "Руководство пользователя", link: "/ru_ru/user-manual" },
+                            { text: "Вопросы и ответы", link: "/ru_ru/Q&A" },
+                            { text: "Политика конфиденциальности", link: "/ru_ru/privacy-policy" },
                         ],
                     },
                     {
                         text: "Разработчики",
                         items: [
-                            { text: "Руководство по разработке", link: "/ru/develop/manual" },
+                            { text: "Руководство по разработке", link: "/ru_ru/develop/manual" },
                         ],
                     },
                 ],
@@ -112,7 +112,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                     {
                         title: "Онлайн-инструменты",
                         items: [
-                            { text: "Руководство пользователя", link: "/ru/user-manual" },
+                            { text: "Руководство пользователя", link: "/ru_ru/user-manual" },
                             { text: "Генератор конфигурационных файлов", link: "https://qrcode.telegram-sms.com/" },
                         ],
                     },
@@ -134,7 +134,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
             themeConfig: {
                 i18nRouting: true,
                 nav: [
-                    { text: "ホーム", link: "/ja_jp" },
+                    { text: "ホーム", link: "/ja_jp/" },
                     { text: "設定ジェネレーター", link: "https://config.telegram-sms.com/" },
                 ],
                 footer: {
@@ -191,7 +191,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
             themeConfig: {
                 i18nRouting: true,
                 nav: [
-                    { text: "主页", link: "/" },
+                    { text: "主页", link: "/zh_cn/" },
                     { text: "配置生成", link: "https://config.telegram-sms.com/" },
                 ],
                 footer: {
@@ -248,7 +248,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
             themeConfig: {
                 i18nRouting: true,
                 nav: [
-                    { text: "主頁", link: "/" },
+                    { text: "主頁", link: "/zh_tw/" },
                     { text: "配置生成", link: "https://config.telegram-sms.com/" },
                 ],
                 footer: {
