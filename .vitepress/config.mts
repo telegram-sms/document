@@ -25,15 +25,21 @@ export default defineConfigWithTheme<ExtendedConfig>({
                 ],
                 footer: {
                     message: " <a href=\"https://github.com/telegram-sms/telegram-sms/blob/master/LICENSE\">BSD 3-Clause License</a> の下でリリースされています。",
-                    copyright: "Copyright 2018-2024 Reall System LTD, TelegramはTelegram Messenger LLPの商標です。",
+                    copyright: "Copyright 2018-2025 Reall System LTD, TelegramはTelegram Messenger LLPの商標です。",
                 },
                 sidebar: [
                     {
-                        text: "ようこそ",
+                        text: "ユーザー",
                         items: [
                             { text: "ユーザーマニュアル", link: "/ja_jp/user-manual" },
                             { text: "Q&A", link: "/ja_jp/q&a" },
                             { text: "個人情報保護方針", link: "/ja_jp/privacy-policy" },
+                        ],
+                    },
+                    {
+                        text: "開発者",
+                        items: [
+                            { text: "開発ガイド", link: "/ja_jp/develop/manual" },
                         ],
                     },
                 ],
@@ -76,15 +82,21 @@ export default defineConfigWithTheme<ExtendedConfig>({
                 ],
                 footer: {
                     message: "在 <a href=\"https://github.com/telegram-sms/telegram-sms/blob/master/LICENSE\">BSD 3-Clause License</a> 许可下发布。",
-                    copyright: "版权所有 2018-2024 Reall System LTD，Telegram 是 Telegram Messenger LLP 的商标。",
+                    copyright: "版权所有 2018-2025 Reall System LTD，Telegram 是 Telegram Messenger LLP 的商标。",
                 },
                 sidebar: [
                     {
-                        text: "欢迎",
+                        text: "个人用户",
                         items: [
                             { text: "用户手册", link: "/zh_cn/user-manual" },
                             { text: "问与答", link: "/zh_cn/q&a" },
                             { text: "隐私政策", link: "/zh_cn/privacy-policy" },
+                        ],
+                    },
+                    {
+                        text: "开发者",
+                        items: [
+                            { text: "开发指南", link: "/zh_cn/develop/manual" },
                         ],
                     },
                 ],
@@ -127,15 +139,21 @@ export default defineConfigWithTheme<ExtendedConfig>({
                 ],
                 footer: {
                     message: "在 <a href=\"https://github.com/telegram-sms/telegram-sms/blob/master/LICENSE\">BSD 3-Clause License</a> 許可下發布。",
-                    copyright: "版權所有 2018-2024 Reall System LTD，Telegram 是 Telegram Messenger LLP 的商標。",
+                    copyright: "版權所有 2018-2025 Reall System LTD，Telegram 是 Telegram Messenger LLP 的商標。",
                 },
                 sidebar: [
                     {
-                        text: "歡迎",
+                        text: "個人用戶",
                         items: [
                             { text: "用戶手冊", link: "/zh_tw/user-manual" },
                             { text: "問與答", link: "/zh_tw/q&a" },
                             { text: "隱私政策", link: "/zh_tw/privacy-policy" },
+                        ],
+                    },
+                    {
+                        text: "開發者",
+                        items: [
+                            { text: "開發指南", link: "/zh_tw/develop/manual" },
                         ],
                     },
                 ],
@@ -180,7 +198,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
         ],
         footer: {
             message: "Released under the <a href=\"https://github.com/telegram-sms/telegram-sms/blob/master/LICENSE\">BSD 3-Clause License</a>.",
-            copyright: "Copyright 2018-2024 Reall System LTD, Telegram is a trademark of Telegram Messenger LLP.",
+            copyright: "Copyright 2018-2025 Reall System LTD, Telegram is a trademark of Telegram Messenger LLP.",
         },
         sidebar: [
             {

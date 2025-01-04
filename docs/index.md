@@ -22,6 +22,9 @@ hero:
     - theme: alt
       text: Privacy Policy
       link: /privacy-policy
+    - theme: alt
+      text: Development Manual
+      link: /develop/manual
 
 features:
   - title: Easy

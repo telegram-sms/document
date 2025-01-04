@@ -23,7 +23,7 @@ hero:
       text: プライバシーポリシー
       link: /ja_jp/privacy-policy
     - theme: alt
-      text: 開発者向け
+      text: 開発ガイド
       link: /ja_jp/develop/manual
 
 features:

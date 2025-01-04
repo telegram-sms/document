@@ -23,7 +23,7 @@ hero:
       text: 隐私政策
       link: /zh_cn/privacy-policy
     - theme: alt
-      text: 给开发者
+      text: 开发指南
       link: /zh_cn/develop/manual
 
 features:
