@@ -27,7 +27,7 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 
 ## 2. Configuración - Hacer que el Bot Responda
 1. Ingrese el token del bot que obtuvo anteriormente en el campo correspondiente.
-   > Puede usar https://qrcode.telegram-sms.com para generar un código QR con el token del bot e ingresarlo rápidamente usando la función de escaneo.
+   > Puede usar https://config.telegram-sms.com para generar un código QR con el token del bot e ingresarlo rápidamente usando la función de escaneo.
 
 2. Active el bot y agrégelo a un canal o grupo. Si lo agrega a un grupo y usa la función "Solo responder a comandos que incluyan el nombre de usuario del bot", desactive el "Privacy mode" en BotFather para evitar que algunos mensajes no se procesen correctamente.
 

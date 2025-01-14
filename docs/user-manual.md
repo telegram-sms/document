@@ -43,7 +43,7 @@ where  `xxxxxxxx:xxxxxxxxxxxxxx` is the token of your bot. You can find your bot
 
 * Enter the Bot Token you just received in the `Bot Token` column in the APP.
 
-> You can visit https://qrcode.telegram-sms.com to generate a QR code of this token, then use Telegram SMS to scan this QR code to input the token quickly.
+> You can visit https://config.telegram-sms.com to generate a QR code of this token, then use Telegram SMS to scan this QR code to input the token quickly.
 
 > If you can debug with ADB on your computer, you can set the input focus on the column of Bot Token, and enter `adb shell input text <Your bot token>` in your terminal, which will help you fill in the column. ADB is required for this method.
 
@@ -76,7 +76,7 @@ Connected to the Telegram API Server.
 ### Precautions
 * Telegram SMS needs you to ban the adaptive battery. It will help you receive your messages quickly and stably. If you are using a proxy APP, please stop restrict its battery use as well.
 
-* When you are using OS like MIUI, please close the battery restriction in the settings, and enable starting with the system. When you need to receive Service SMS, please grant the corresponding permissions in the settings. [Click here for more information](https://guide.telegram-sms.com/en_gb/q&a#i-can-receive-standard-sms-but-not-sms-containing-verify-codes)
+* When you are using OS like MIUI, please close the battery restriction in the settings, and enable starting with the system. When you need to receive Service SMS, please grant the corresponding permissions in the settings. [Click here for more information](https://telegram-sms.com/Q&A.html#i-can-receive-standard-sms-but-not-sms-containing-verify-codes)
 
 * When you are using EMUI, the Telegram SMS background process cannot run in the background normally due to the EMUI's special background management strategy.
 

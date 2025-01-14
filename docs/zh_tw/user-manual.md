@@ -36,7 +36,7 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 
 * 將上面獲取到的機器人令牌填入機器人令牌一欄。
 
->您可以使用 https://qrcode.telegram-sms.com 生成一個內容為機器人令牌的二維碼。並使用掃描二維碼功能快速輸入機器人令牌。
+>您可以使用 https://config.telegram-sms.com 生成一個內容為機器人令牌的二維碼。並使用掃描二維碼功能快速輸入機器人令牌。
 
 >如果您能使用 ADB 進行調試。您可以將輸入焦點放在機器人令牌一欄，使用 `adb shell input text <您的機器人令牌>`（需要當前系統環境中含有adb），這將模擬鍵盤輸入機器人令牌。
 
@@ -70,7 +70,7 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 
 * Telegram SMS 需要您禁用電池優化功能，禁用電池優化功能將使程序能夠穩定快速的接收您的消息。如若使用代理軟件，請一併設置禁用電池優化。
 
-* 當您使用 MIUI 等定制化系統時，請注意在設置中將電池限制關閉，並且啟用開機自動啟動。當您需要接收通知類短信的時候，請在設置中將通知類短信權限打開。 [更多請點擊這裡](https://guide.telegram-sms.com/zh_tw/Q&A.html#%E6%88%91%E8%83%BD%E6%94%B6%E5%88%B0%E4%B8%80%E8%88%AC%E7%9A%84%E7%9F%AD%E4%BF%A1%EF%BC%8C%E4%BD%86%E6%B2%92%E6%9C%89%E8%BE%A6%E6%B3%95%E6%94%B6%E5%88%B0%E5%90%AB%E6%9C%89%E9%A9%97%E8%AD%89%E7%A2%BC%E7%9A%84%E7%9F%AD%E4%BF%A1)
+* 當您使用 MIUI 等定制化系統時，請注意在設置中將電池限制關閉，並且啟用開機自動啟動。當您需要接收通知類短信的時候，請在設置中將通知類短信權限打開。 [更多請點擊這裡](https://telegram-sms.com/zh_tw/Q&A.html#%E6%88%91%E8%83%BD%E6%94%B6%E5%88%B0%E4%B8%80%E8%88%AC%E7%9A%84%E7%9F%AD%E4%BF%A1-%E4%BD%86%E6%B2%92%E6%9C%89%E8%BE%A6%E6%B3%95%E6%94%B6%E5%88%B0%E5%90%AB%E6%9C%89%E9%A9%97%E8%AD%89%E7%A2%BC%E7%9A%84%E7%9F%AD%E4%BF%A1)
 
 * 當您使用 EMUI 時，由於特殊的系統後台管理機制，Telegram SMS的後台進程無法正常在後台執行。
 
