@@ -189,6 +189,10 @@ export default defineConfigWithTheme<ExtendedConfig>({
             lang: "zh_cn",
             description: "借助 Telegram SMS 的力量，您的多手机生活比以往任何时候都更加轻松。",
             themeConfig: {
+                socialLinks: [
+                    { icon: "github", link: "https://github.com/telegram-sms/telegram-sms" },
+                    { icon: "telegram", link: "https://t.me/tg_sms_changelog" },
+                ],
                 i18nRouting: true,
                 nav: [
                     { text: "主页", link: "/zh_cn/" },
@@ -246,6 +250,10 @@ export default defineConfigWithTheme<ExtendedConfig>({
             lang: "zh_tw",
             description: "借助 Telegram SMS 的力量，您的多手機生活比以往任何時候都更加輕鬆。",
             themeConfig: {
+                socialLinks: [
+                    { icon: "github", link: "https://github.com/telegram-sms/telegram-sms" },
+                    { icon: "telegram", link: "https://t.me/tg_sms_changelog" },
+                ],
                 i18nRouting: true,
                 nav: [
                     { text: "主頁", link: "/zh_tw/" },
@@ -332,6 +340,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
         ],
         socialLinks: [
             { icon: "github", link: "https://github.com/telegram-sms/telegram-sms" },
+            { icon: "telegram", link: "https://t.me/tg_sms_changelog_eng" },
         ],
         footerNav: [
             {
