@@ -56,7 +56,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                         title: "Herramientas en línea",
                         items: [
                             { text: "Manual del usuario", link: "/es/user-manual" },
-                            { text: "Generador de archivos de configuración", link: "https://qrcode.telegram-sms.com/" },
+                            { text: "Generador de archivos de configuración", link: "https://config.telegram-sms.com/" },
                         ],
                     },
                     {
@@ -113,7 +113,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                         title: "Онлайн-инструменты",
                         items: [
                             { text: "Руководство пользователя", link: "/ru_ru/user-manual" },
-                            { text: "Генератор конфигурационных файлов", link: "https://qrcode.telegram-sms.com/" },
+                            { text: "Генератор конфигурационных файлов", link: "https://config.telegram-sms.com/" },
                         ],
                     },
                     {
@@ -170,7 +170,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                         title: "ツール",
                         items: [
                             { text: "ユーザーマニュアル", link: "/ja_jp/user-manual" },
-                            { text: "設定ジェネレーター", link: "https://qrcode.telegram-sms.com/" },
+                            { text: "設定ジェネレーター", link: "https://config.telegram-sms.com/" },
                         ],
                     },
                     {
@@ -231,7 +231,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                         title: "在线工具",
                         items: [
                             { text: "用户手册", link: "/zh_cn/user-manual" },
-                            { text: "配置生成", link: "https://qrcode.telegram-sms.com/" },
+                            { text: "配置生成", link: "https://config.telegram-sms.com/" },
                         ],
                     },
                     {
@@ -292,7 +292,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                         title: "線上工具",
                         items: [
                             { text: "用戶手冊", link: "/zh_tw/user-manual" },
-                            { text: "配置檔案產生器", link: "https://qrcode.telegram-sms.com/" },
+                            { text: "配置檔案產生器", link: "https://config.telegram-sms.com/" },
                         ],
                     },
                     {
@@ -355,7 +355,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                 title: "Tools",
                 items: [
                     { text: "Documentation", link: "/user-manual" },
-                    { text: "Config Generator", link: "https://qrcode.telegram-sms.com/" },
+                    { text: "Config Generator", link: "https://config.telegram-sms.com/" },
                 ],
             },
             {
