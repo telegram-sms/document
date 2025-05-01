@@ -139,7 +139,7 @@ const isExternalLink = (link: string) => /^https?:\/\//.test(link)
 }
 
 .footerText {
-    margin-top: 32px;
+    margin-top: 48px;
 }
 
 .footerMessage, .footerCopyright {
