@@ -13,36 +13,103 @@ git позволяет гибко настраивать рабочий проц
 
 ## Как скомпилировать проект
 
-#### 1. загрузите последний исходный код
-```
+### Предварительные требования
+
+- **JDK 21** (Java Development Kit 21 или выше)
+- **Android SDK** со следующими компонентами:
+  - Android SDK Build-Tools
+  - Android SDK Platform (API 36 или выше)
+  - NDK 21.0.6113669
+- **Git** с поддержкой подмодулей
+
+### 1. Загрузите последний исходный код
+
+Клонируйте репозиторий с подмодулями:
+
+```bash
 git clone https://github.com/telegram-sms/telegram-sms.git telegram-sms
 cd telegram-sms
 git submodule update --init --recursive
 ```
 
-#### 2. настройте среду компиляции
+### 2. Настройте среду компиляции
 
 Вы можете скомпилировать этот проект, ссылаясь на скрипт компиляции, показанный в [android.yml](https://github.com/telegram-sms/telegram-sms/blob/master/.github/workflows/android.yml)
 
-Настройте переменные среды, обязательно измените `ANDROID_HOME` на ваш каталог `Android SDK`
+#### Установите NDK
 
+Если у вас не установлен NDK 21.0.6113669, вы можете установить его с помощью:
+
+```bash
+echo "y" | ${ANDROID_HOME}/tools/bin/sdkmanager --install "ndk;21.0.6113669"
 ```
-export ANDROID_HOME=<Android SDK>
-export KEYSTORE_PASSWORD=<Ваш пароль>
-export ALIAS_PASSWORD=<Ваш пароль>
-export ALIAS_NAME=<Ваше имя псевдонима>
+
+#### Настройте ключи подписи
+
+Для релизных сборок вам нужно настроить файл хранилища ключей:
+
+1. Поместите файл хранилища ключей в `app/keys.jks`
+2. Настройте переменные среды:
+
+```bash
+export KEYSTORE_PASS=<Ваш пароль хранилища ключей>
+export ALIAS_NAME=<Имя вашего псевдонима ключа>
+export ALIAS_PASS=<Ваш пароль псевдонима>
 export VERSION_CODE=1
 export VERSION_NAME="Debug"
+```
+
+#### Скопируйте языковой пакет
+
+Проект использует внешние файлы языковых пакетов, которые необходимо скопировать перед компиляцией:
+
+```bash
 ./gradlew app:copy_language_pack
 ```
 
-#### 3. запустите компиляцию
-```
+Эта команда копирует языковые ресурсы из `app/language_pack/` в `app/src/main/res/`.
+
+### 3. Запустите компиляцию
+
+#### Для отладочной сборки:
+
+```bash
 ./gradlew assembleDebug
 ```
 
-Или используйте следующую команду для создания версии `release`
+Выходной APK будет в: `app/build/outputs/apk/debug/app-debug.apk`
 
-```
+#### Для релизной сборки:
+
+```bash
 ./gradlew assembleRelease
 ```
+
+Выходной APK будет в: `app/build/outputs/apk/release/app-release.apk`
+
+#### Полная команда сборки (используется в CI):
+
+```bash
+export KEYSTORE_PASS=<Ваш пароль> && \
+export ALIAS_NAME=<Ваш псевдоним> && \
+export ALIAS_PASS=<Ваш пароль> && \
+export VERSION_CODE=1 && \
+export VERSION_NAME="1.0.0" && \
+./gradlew app:copy_language_pack && \
+./gradlew assembleRelease
+```
+
+### Конфигурация сборки
+
+Проект использует:
+- **SDK компиляции**: 36
+- **Цель Java/Kotlin**: JDK 21
+- **Gradle**: 8.13.2+
+- **Kotlin**: 2.2.21
+- **NDK**: 21.0.6113669
+- **Поддерживаемые ABI**: armeabi-v7a, arm64-v8a
+
+### Ветки
+
+- **master**: Основная ветка разработки
+- **nightly**: Ночные сборки с измененным именем пакета (суффикс `.nightly`)

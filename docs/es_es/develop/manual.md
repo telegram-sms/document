@@ -13,38 +13,103 @@ git permite mucha flexibilidad en el flujo de trabajo de cómo las personas trab
 
 ## Cómo compilar el proyecto
 
-#### 1. descargar el último código fuente
+### Requisitos previos
 
-```
+- **JDK 21** (Java Development Kit 21 o superior)
+- **Android SDK** con los siguientes componentes:
+  - Android SDK Build-Tools
+  - Android SDK Platform (API 36 o superior)
+  - NDK 21.0.6113669
+- **Git** con soporte para submódulos
+
+### 1. Descargar el último código fuente
+
+Clonar el repositorio con submódulos:
+
+```bash
 git clone https://github.com/telegram-sms/telegram-sms.git telegram-sms
 cd telegram-sms
 git submodule update --init --recursive
 ```
 
-#### 2. configurar el entorno de compilación
+### 2. Configurar el entorno de compilación
 
 Puede compilar este proyecto refiriéndose al script de compilación mostrado en [android.yml](https://github.com/telegram-sms/telegram-sms/blob/master/.github/workflows/android.yml)
 
-Configure las variables de entorno, tenga cuidado de modificar `ANDROID_HOME` para su directorio `Android SDK`
+#### Instalar NDK
 
+Si no tiene NDK 21.0.6113669 instalado, puede instalarlo usando:
+
+```bash
+echo "y" | ${ANDROID_HOME}/tools/bin/sdkmanager --install "ndk;21.0.6113669"
 ```
-export ANDROID_HOME=<Android SDK>
-export KEYSTORE_PASSWORD=<Su contraseña>
-export ALIAS_PASSWORD=<Su contraseña>
+
+#### Configurar claves de firma
+
+Para compilaciones de lanzamiento, necesita configurar un archivo keystore:
+
+1. Coloque su archivo keystore en `app/keys.jks`
+2. Configure las variables de entorno:
+
+```bash
+export KEYSTORE_PASS=<Su contraseña del keystore>
 export ALIAS_NAME=<Su nombre de alias>
+export ALIAS_PASS=<Su contraseña de alias>
 export VERSION_CODE=1
 export VERSION_NAME="Debug"
+```
+
+#### Copiar paquete de idioma
+
+El proyecto usa archivos de paquete de idioma externos que deben copiarse antes de la compilación:
+
+```bash
 ./gradlew app:copy_language_pack
 ```
 
-#### 3. ejecutar la compilación
+Esto copia los recursos de idioma de `app/language_pack/` a `app/src/main/res/`.
 
-```
+### 3. Ejecutar compilación
+
+#### Para compilación de depuración:
+
+```bash
 ./gradlew assembleDebug
 ```
 
-O use el siguiente comando para generar la versión `release`
+El APK de salida estará en: `app/build/outputs/apk/debug/app-debug.apk`
 
-```
+#### Para compilación de lanzamiento:
+
+```bash
 ./gradlew assembleRelease
 ```
+
+El APK de salida estará en: `app/build/outputs/apk/release/app-release.apk`
+
+#### Comando de compilación completo (como se usa en CI):
+
+```bash
+export KEYSTORE_PASS=<Su contraseña> && \
+export ALIAS_NAME=<Su alias> && \
+export ALIAS_PASS=<Su contraseña> && \
+export VERSION_CODE=1 && \
+export VERSION_NAME="1.0.0" && \
+./gradlew app:copy_language_pack && \
+./gradlew assembleRelease
+```
+
+### Configuración de compilación
+
+El proyecto utiliza:
+- **SDK de compilación**: 36
+- **Objetivo Java/Kotlin**: JDK 21
+- **Gradle**: 8.13.2+
+- **Kotlin**: 2.2.21
+- **NDK**: 21.0.6113669
+- **ABIs soportadas**: armeabi-v7a, arm64-v8a
+
+### Ramas
+
+- **master**: Rama de desarrollo principal
+- **nightly**: Compilaciones nocturnas con nombre de paquete modificado (sufijo `.nightly`)
