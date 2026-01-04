@@ -36,16 +36,6 @@ export default defineConfigWithTheme<ExtendedConfig>({
                             { text: "Política de privacidad", link: "/es_es/privacy-policy" },
                         ],
                     },
-                    {
-                        text: "Desarrolladores",
-                        items: [
-                            { text: "Guía de desarrollo", link: "/es_es/develop/manual" },
-                            { text: "Documentación del módulo de cifrado", link: "/es_es/develop/CRYPTO_DOC" },
-                            { text: "Gestión de versiones de estructura de datos", link: "/es_es/develop/DATA_STRUCTURE_VERSION_ES" },
-                            { text: "Estructura de datos - Guía rápida", link: "/es_es/develop/DATA_STRUCTURE_VERSION_QUICK_ES" },
-                            { text: "Bot API auto-hospedado", link: "/es_es/develop/self_hosted_bot_api" },
-                        ],
-                    },
                 ],
                 footerNav: [
                     {
@@ -97,16 +87,6 @@ export default defineConfigWithTheme<ExtendedConfig>({
                             { text: "Политика конфиденциальности", link: "/ru_ru/privacy-policy" },
                         ],
                     },
-                    {
-                        text: "Разработчики",
-                        items: [
-                            { text: "Руководство по разработке", link: "/ru_ru/develop/manual" },
-                            { text: "Документация модуля шифрования", link: "/ru_ru/develop/CRYPTO_DOC" },
-                            { text: "Управление версиями структуры данных", link: "/ru_ru/develop/DATA_STRUCTURE_VERSION_RU" },
-                            { text: "Структура данных - Краткое руководство", link: "/ru_ru/develop/DATA_STRUCTURE_VERSION_QUICK_RU" },
-                            { text: "Самостоятельный Bot API", link: "/ru_ru/develop/self_hosted_bot_api" },
-                        ],
-                    },
                 ],
                 footerNav: [
                     {
@@ -156,16 +136,6 @@ export default defineConfigWithTheme<ExtendedConfig>({
                             { text: "ユーザーマニュアル", link: "/ja_jp/user-manual" },
                             { text: "Q&A", link: "/ja_jp/Q&A" },
                             { text: "個人情報保護方針", link: "/ja_jp/privacy-policy" },
-                        ],
-                    },
-                    {
-                        text: "開発者",
-                        items: [
-                            { text: "開発ガイド", link: "/ja_jp/develop/manual" },
-                            { text: "暗号化モジュールドキュメント", link: "/ja_jp/develop/CRYPTO_DOC" },
-                            { text: "データ構造バージョン管理", link: "/ja_jp/develop/DATA_STRUCTURE_VERSION_JP" },
-                            { text: "データ構造 - クイックガイド", link: "/ja_jp/develop/DATA_STRUCTURE_VERSION_QUICK_JP" },
-                            { text: "セルフホスト Bot API", link: "/ja_jp/develop/self_hosted_bot_api" },
                         ],
                     },
                 ],
@@ -223,16 +193,6 @@ export default defineConfigWithTheme<ExtendedConfig>({
                             { text: "隐私政策", link: "/zh_cn/privacy-policy" },
                         ],
                     },
-                    {
-                        text: "开发者",
-                        items: [
-                            { text: "开发指南", link: "/zh_cn/develop/manual" },
-                            { text: "加密模块文档", link: "/zh_cn/develop/CRYPTO_DOC" },
-                            { text: "数据结构版本管理", link: "/zh_cn/develop/DATA_STRUCTURE_VERSION_CN" },
-                            { text: "数据结构 - 快速指南", link: "/zh_cn/develop/DATA_STRUCTURE_VERSION_QUICK_CN" },
-                            { text: "自托管 Bot API", link: "/zh_cn/develop/self_hosted_bot_api" },
-                        ],
-                    },
                 ],
                 footerNav: [
                     {
@@ -288,16 +248,6 @@ export default defineConfigWithTheme<ExtendedConfig>({
                             { text: "隱私政策", link: "/zh_tw/privacy-policy" },
                         ],
                     },
-                    {
-                        text: "開發者",
-                        items: [
-                            { text: "開發指南", link: "/zh_tw/develop/manual" },
-                            { text: "加密模組文件", link: "/zh_tw/develop/CRYPTO_DOC" },
-                            { text: "資料結構版本管理", link: "/zh_tw/develop/DATA_STRUCTURE_VERSION_TW" },
-                            { text: "資料結構 - 快速指南", link: "/zh_tw/develop/DATA_STRUCTURE_VERSION_QUICK_TW" },
-                            { text: "自架 Bot API", link: "/zh_tw/develop/self_hosted_bot_api" },
-                        ],
-                    },
                 ],
                 footerNav: [
                     {
@@ -349,16 +299,6 @@ export default defineConfigWithTheme<ExtendedConfig>({
                     { text: "User manual", link: "/user-manual" },
                     { text: "Q&A", link: "/Q&A" },
                     { text: "Privacy policy", link: "/privacy-policy" },
-                ],
-            },
-            {
-                text: "Developer",
-                items: [
-                    { text: "Development Manual", link: "/develop/manual" },
-                    { text: "Crypto Module Documentation", link: "/develop/CRYPTO_DOC" },
-                    { text: "Data Structure Version Management", link: "/develop/DATA_STRUCTURE_VERSION_EN" },
-                    { text: "Data Structure - Quick Guide", link: "/develop/DATA_STRUCTURE_VERSION_QUICK_EN" },
-                    { text: "Self-hosted Bot API", link: "/develop/self_hosted_bot_api" },
                 ],
             },
         ],

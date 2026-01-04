@@ -24,7 +24,7 @@ hero:
       link: /privacy-policy
     - theme: alt
       text: Development Manual
-      link: /develop/manual
+      link: https://dev.telegram-sms.com/
 
 features:
   - title: Easy
