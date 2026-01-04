@@ -6,7 +6,6 @@ Official documentation repository for the Telegram SMS project, built with [Vite
 
 ```
 docs/
-├── develop/                    # English developer documentation
 ├── es_es/                      # Spanish documentation
 ├── ja_jp/                      # Japanese documentation
 ├── ru_ru/                      # Russian documentation
