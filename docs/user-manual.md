@@ -92,6 +92,22 @@ You can set a trusted phone number for automatic forwarding. The bot will forwar
 {SMS content}
 ```
 
+For dual SIM devices, you can specify which SIM card to use:
+
+```
+/sendsms 1
+{Receiver phone number}
+{SMS content}
+```
+
+or
+
+```
+/sendsms 2
+{Receiver phone number}
+{SMS content}
+```
+
 Example：
 
 ```
@@ -111,6 +127,18 @@ You can use `/sendussd` to send USSD requests. The command format is:
 {USSD code}
 ```
 
+For dual SIM devices, you can specify which SIM card to use:
+
+```
+/sendussd 1 {USSD code}
+```
+
+or
+
+```
+/sendussd 2 {USSD code}
+```
+
 **If you are roaming, please add your country/region codes before the number(e.g., UK country calling code: +44)**
 
 ## 4. Commands - Use chat commands to manage bot
@@ -127,6 +155,22 @@ The command format to send an SMS is:
 {Receiver phone number}
 {SMS content}
 ```
+
+For dual SIM devices, you can specify which SIM card to use by adding the SIM number (1 or 2) after the command:
+```
+/sendsms 1
+{Receiver phone number}
+{SMS content}
+```
+
+or
+
+```
+/sendsms 2
+{Receiver phone number}
+{SMS content}
+```
+
 For example,
 ```
 /sendsms
@@ -136,7 +180,7 @@ example.com
 
 It will send `example.com` to the number `+441807391001` by SMS.
 
-An SMS will be sent by default SIM card when using `/sendsms`. When you are using dual SIM cards, use `/sendsms1` to send SMS from the first SIM card and `/sendsms2` to send SMS from the second SIM card (if SIM2 is avaliable).
+When using `/sendsms` without specifying a SIM card number on a dual SIM device, you will be prompted to select which SIM card to use.
 
 ### Reply to an SMS
 

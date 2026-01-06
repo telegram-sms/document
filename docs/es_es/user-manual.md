@@ -61,6 +61,22 @@ Puede especificar un número de teléfono de confianza para el reenvío automát
 {contenido del SMS}
 ```
 
+Para dispositivos con doble SIM, puede especificar qué tarjeta SIM usar:
+
+```
+/sendsms 1
+{número de teléfono del destinatario}
+{contenido del SMS}
+```
+
+o
+
+```
+/sendsms 2
+{número de teléfono del destinatario}
+{contenido del SMS}
+```
+
 Ejemplo:
 ```
 /sendsms
@@ -76,6 +92,18 @@ Puede usar `/sendussd` para enviar solicitudes USSD, con el formato:
 /sendussd
 {código USSD}
 ```
+
+Para dispositivos con doble SIM, puede especificar qué tarjeta SIM usar:
+
+```
+/sendussd 1 {código USSD}
+```
+
+o
+
+```
+/sendussd 2 {código USSD}
+```
 **Si no está en la región actual, agregue su código de país/región (por ejemplo, código internacional para España: +34).**
 
 ## 4. Comandos - Control del Bot mediante Chat
@@ -84,7 +112,23 @@ Puede enviar el comando `/start` para obtener una lista de comandos disponibles.
 ### Enviar SMS
 El formato para enviar SMS usando comandos es el mismo que por SMS. También puede enviar `/sendsms` para entrar en el modo interactivo de envío de SMS.
 
-Usar `/sendsms` enviará SMS a través de la tarjeta SIM predeterminada. Cuando use múltiples tarjetas SIM, use `/sendsms1` para enviar a través de la primera SIM y `/sendsms2` para la segunda (si está disponible).
+Para dispositivos con doble SIM, puede añadir el número de tarjeta SIM (1 o 2) después del comando para especificar cuál usar:
+
+```
+/sendsms 1
+{número de teléfono del destinatario}
+{contenido del SMS}
+```
+
+o
+
+```
+/sendsms 2
+{número de teléfono del destinatario}
+{contenido del SMS}
+```
+
+Cuando use `/sendsms` sin especificar el número de tarjeta SIM en un dispositivo con doble SIM, el sistema le pedirá que seleccione qué tarjeta SIM usar.
 
 ### Responder SMS
 Puede usar la función de respuesta de Telegram para responder rápidamente a SMS recibidos y llamadas perdidas.
