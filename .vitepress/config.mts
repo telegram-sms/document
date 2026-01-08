@@ -29,9 +29,16 @@ export default defineConfigWithTheme<ExtendedConfig>({
                 },
                 sidebar: [
                     {
-                        text: "Usuarios",
+                        text: "Documentación",
                         items: [
                             { text: "Manual del usuario", link: "/es_es/user-manual" },
+                            { text: "Empezar", link: "/es_es/getting-started" },
+                            { text: "Comandos", link: "/es_es/commands" },
+                        ],
+                    },
+                    {
+                        text: "Información",
+                        items: [
                             { text: "Preguntas y respuestas", link: "/es_es/Q&A" },
                             { text: "Política de privacidad", link: "/es_es/privacy-policy" },
                         ],
@@ -80,9 +87,16 @@ export default defineConfigWithTheme<ExtendedConfig>({
                 },
                 sidebar: [
                     {
-                        text: "Пользователи",
+                        text: "Документация",
                         items: [
                             { text: "Руководство пользователя", link: "/ru_ru/user-manual" },
+                            { text: "Начало работы", link: "/ru_ru/getting-started" },
+                            { text: "Команды", link: "/ru_ru/commands" },
+                        ],
+                    },
+                    {
+                        text: "Информация",
+                        items: [
                             { text: "Вопросы и ответы", link: "/ru_ru/Q&A" },
                             { text: "Политика конфиденциальности", link: "/ru_ru/privacy-policy" },
                         ],
@@ -131,9 +145,16 @@ export default defineConfigWithTheme<ExtendedConfig>({
                 },
                 sidebar: [
                     {
-                        text: "ユーザー",
+                        text: "ドキュメント",
                         items: [
                             { text: "ユーザーマニュアル", link: "/ja_jp/user-manual" },
+                            { text: "はじめに", link: "/ja_jp/getting-started" },
+                            { text: "コマンド", link: "/ja_jp/commands" },
+                        ],
+                    },
+                    {
+                        text: "情報",
+                        items: [
                             { text: "Q&A", link: "/ja_jp/Q&A" },
                             { text: "個人情報保護方針", link: "/ja_jp/privacy-policy" },
                         ],
@@ -186,9 +207,16 @@ export default defineConfigWithTheme<ExtendedConfig>({
                 },
                 sidebar: [
                     {
-                        text: "个人用户",
+                        text: "文档",
                         items: [
                             { text: "用户手册", link: "/zh_cn/user-manual" },
+                            { text: "快速开始", link: "/zh_cn/getting-started" },
+                            { text: "命令", link: "/zh_cn/commands" },
+                        ],
+                    },
+                    {
+                        text: "信息",
+                        items: [
                             { text: "问与答", link: "/zh_cn/Q&A" },
                             { text: "隐私政策", link: "/zh_cn/privacy-policy" },
                         ],
@@ -241,9 +269,16 @@ export default defineConfigWithTheme<ExtendedConfig>({
                 },
                 sidebar: [
                     {
-                        text: "個人用戶",
+                        text: "文件",
                         items: [
-                            { text: "用戶手冊", link: "/zh_tw/user-manual" },
+                            { text: "用户手冊", link: "/zh_tw/user-manual" },
+                            { text: "快速開始", link: "/zh_tw/getting-started" },
+                            { text: "命令", link: "/zh_tw/commands" },
+                        ],
+                    },
+                    {
+                        text: "訊息",
+                        items: [
                             { text: "問與答", link: "/zh_tw/Q&A" },
                             { text: "隱私政策", link: "/zh_tw/privacy-policy" },
                         ],
@@ -294,9 +329,16 @@ export default defineConfigWithTheme<ExtendedConfig>({
         },
         sidebar: [
             {
-                text: "User",
+                text: "Documentation",
                 items: [
                     { text: "User manual", link: "/user-manual" },
+                    { text: "Getting started", link: "/getting-started" },
+                    { text: "Commands", link: "/commands" },
+                ],
+            },
+            {
+                text: "Information",
+                items: [
                     { text: "Q&A", link: "/Q&A" },
                     { text: "Privacy policy", link: "/privacy-policy" },
                 ],
