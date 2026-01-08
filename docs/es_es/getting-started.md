@@ -25,7 +25,7 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 1. Ingrese el token del bot que obtuvo anteriormente en el campo correspondiente.
    > Puede usar https://config.telegram-sms.com para generar un código QR con el token del bot e ingresarlo rápidamente usando la función de escaneo.
 
-2. Active el bot y agrégelo a un canal o grupo. Si lo agrega a un grupo y usa la función "Solo responder a comandos que incluyan el nombre de usuario del bot", desactive el "Privacy mode" en BotFather para evitar que algunos mensajes no se procesen correctamente.
+2. Active el bot y agrégelo a un canal o grupo.
 
 3. Envíe algunos mensajes en la conversación objetivo, el contenido no importa.
 
@@ -40,8 +40,8 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
    - Obtener comandos de chat - Usar comandos de chat para administrar el bot (si no se activa, solo se administrará por SMS)
    - Extracción automática de códigos - Identificar automáticamente códigos de verificación en SMS (función experimental)
    - Mostrar alias de tarjeta SIM - Mostrar alias de tarjeta en el título del mensaje
-   - Solo responder a comandos con nombre de usuario del bot - En grupos o canales, solo responder a comandos que incluyan el nombre de usuario del bot
    - Usar DNS sobre HTTPS - Usar servicio DNS seguro con cifrado (basado en Cloudflare®)
+   - Copia de carbón - Reenviar notificaciones a otros servicios como Bark, Lark o PushDeer. Puede configurar múltiples servicios para recibir copias de sus mensajes.
 
 ## Notas Importantes
 

@@ -114,4 +114,4 @@ You can use `/sendussd` to send a USSD request, and the command format is:
 
 ### Use Group/Channel to Manage Multiple Bots
 
-If the bot is added to a group and `Respond only to commands containing the Bot username` is on, the bot will only respond to the command containing `/<command>@<bot username>`. You can manage multiple bots in a group or a channel by using this function.
+You can add multiple bots to a group or a channel to manage them together.

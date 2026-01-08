@@ -30,7 +30,7 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 
 >您可以使用 https://config.telegram-sms.com 生成一个内容为机器人令牌的二维码。并使用扫描二维码功能快速输入机器人令牌。
 
-* 将机器人激活、加入频道或群组中。如果加入群组中并使用 `仅响应包含机器人用户名的命令` 功能，请在 `BotFather` 中关闭 `Privacy mode`，避免部分消息无法被正确处理。
+* 将机器人激活、加入频道或群组中。
 
 * 在目标对话中发一些消息，内容任意。
 
@@ -46,8 +46,8 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 >* 获取聊天命令 - 使用聊天命令管理机器人(不启用将仅使用短信管理)。
 >* 验证码自动提取 - 自动识别获取短信中的验证码(实验性功能)。
 >* 显示SIM卡别名 - 在消息标题显示卡别名。
->* 仅响应包含机器人用户名的命令 - 在群组或频道中只响应包含机器人用户名的命令。 
 >* 使用 DNS over HTTPS - 使用安全带加密的DNS服务（基于 Cloudflare®）。
+>* 抄送 - 将通知转发到Bark、Lark或PushDeer等其他服务。您可以配置多个服务来接收您的消息副本。
 
 * 点击 `测试并保存`，给予相应的权限。当您收到以下信息时，配置完成。
 

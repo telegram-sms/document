@@ -94,4 +94,4 @@ Puede usar `/sendussd` para enviar solicitudes USSD con el formato:
 
 ### Gestión de Múltiples Bots en Grupos
 
-Si usa el bot en grupos o canales y ha marcado "Solo responder a comandos con nombre de usuario del bot", el bot solo responderá a comandos con el formato `/<comando>@<nombre-usuario-bot>`. Esta función le permite gestionar múltiples bots en grupos o canales.
+Puede agregar múltiples bots a un grupo o canal para administrarlos juntos.

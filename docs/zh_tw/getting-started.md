@@ -32,7 +32,7 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 
 >如果您能使用 ADB 進行調試。您可以將輸入焦點放在機器人令牌一欄，使用 `adb shell input text <您的機器人令牌>`（需要當前系統環境中含有adb），這將模擬鍵盤輸入機器人令牌。
 
-* 將機器人激活、加入頻道或群組中。如果加入群組中並使用 `僅響應包含機器人用戶名的命令` 功能，請在 `BotFather` 中關閉 `Privacy mode`，以避免部分結構化信息無法被正常收到。
+* 將機器人激活、加入頻道或群組中。
 
 * 在目標對話中發一些消息，內容任意。
 
@@ -48,8 +48,8 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 >* 獲取聊天命令 - 使用聊天命令管理機器人(不啟用將僅使用短信管理)。
 >* 驗證碼自動提取 - 自動識別獲取短信中的驗證碼(實驗性功能)。
 >* 在雙卡模式下顯示SIM卡別名 - 在消息標題顯示卡別名。
->* 僅響應包含機器人用戶名的命令 - 在群組或頻道中只響應包含機器人用戶名的命令。
 >* 使用 DNS over HTTPS - 使用安全帶加密的DNS服務（基於 Cloudflare®）。
+>* 抄送 - 將通知轉發到Bark、Lark或PushDeer等其他服務。您可以配置多個服務來接收您的消息副本。
 
 * 點擊 `測試並保存`，給予相應的權限。當您收到以下信息時，配置完成。
 

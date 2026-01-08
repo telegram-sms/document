@@ -38,7 +38,7 @@ where  `xxxxxxxx:xxxxxxxxxxxxxx` is the token of your bot. You can find your bot
 
 > If you can debug with ADB on your computer, you can set the input focus on the column of Bot Token, and enter `adb shell input text <Your bot token>` in your terminal, which will help you fill in the column. ADB is required for this method.
 
-* Activate the bot, and add it to a channel or group. If the bot is added to a group and `Respond only to commands containing the Bot username` is on, please close `Privacy mode` in `BotFather` to make sure you can receive some structured messages.
+* Activate the bot, and add it to a channel or group.
 
 * Send something arbitrary to the bot. 
 
@@ -54,8 +54,8 @@ where  `xxxxxxxx:xxxxxxxxxxxxxx` is the token of your bot. You can find your bot
 >* Get chat command - Use chat commands to manage your bot (SMS management only if you disable this)
 >* Verification code automatic extraction - Automatically extract verification code from SMS (experimental function).
 >* Display SIM card alias in dual card mode - Display SIM card alias on the SMS title.
->* Respond only to commands containing the Bot username - The bot will only respond to the commands that contain the Bot username in a group or a channel.
 >* Using DNS over HTTPS - Use secure encrypted DNS service (based on Cloudflare®)
+>* Carbon Copy - Forward notifications to other services such as Bark, Lark, or PushDeer. You can configure multiple services to receive copies of your messages.
 
 * Click `Test and save` to grant corresponding permissions. The configuration succeeds when you receive the following SMS:
 
