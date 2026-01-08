@@ -74,8 +74,3 @@ Connected to the Telegram API Server.
 
 * If your system cannot receive SMS successfully due to the system restriction, please set this APP as the default SMS APP.
 
-## Copyright Information
-
-- Telegram is a trademark of Telegram Messenger LLP.
-- Cloudflare® is a trademark of Cloudflare, Inc.
-- MIUI® is a trademark of Xiaomi Corporation.

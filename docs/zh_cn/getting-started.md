@@ -65,9 +65,3 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 * 当您使用 EMUI 时，由于特殊的系统后台管理机制，Telegram SMS的后台进程无法正常在后台执行。
 
 * 如果您的系统无法正常接收短信通知，这是因为系统限制的原因，请尝试将本应用设置为默认短信APP。
-
-## 版权信息
-
-- Telegram® 是 Telegram Messenger LLP 的注册商标。
-- Cloudflare® 是 Cloudflare, Inc. 的注册商标。
-- MIUI® 是小米科技有限责任公司的注册商标。

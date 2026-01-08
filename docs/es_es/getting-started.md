@@ -49,9 +49,3 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 * Cuando use sistemas personalizados como MIUI, asegúrese de desactivar las restricciones de batería en la configuración y habilitar el inicio automático. Cuando necesite recibir SMS de tipo notificación, habilite los permisos correspondientes en la configuración.
 * En EMUI, debido a su mecanismo especial de gestión en segundo plano, el proceso de Telegram SMS no puede ejecutarse normalmente en segundo plano.
 * Si su sistema no puede recibir normalmente notificaciones de SMS, esto se debe a restricciones del sistema. Intente configurar esta aplicación como la aplicación de SMS predeterminada.
-
-## Información de Derechos de Autor
-
-- Telegram® es una marca registrada de Telegram Messenger LLP.
-- Cloudflare® es una marca registrada de Cloudflare, Inc.
-- MIUI® es una marca registrada de Xiaomi Inc.

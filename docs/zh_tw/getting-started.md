@@ -68,8 +68,3 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 
 * 如果您的系統無法正常接收短信通知，這是因為系統限制的原因，請嘗試將本應用設置為默認短信APP。
 
-## 版權信息
-
-- Telegram® 是 Telegram Messenger LLP 的註冊商標。
-- Cloudflare® 是 Cloudflare, Inc. 的註冊商標。
-- MIUI® 是小米科技有限責任公司的註冊商標。
