@@ -322,6 +322,21 @@ export default defineConfigWithTheme<ExtendedConfig>({
             },
         },
     },
+    markdown: {
+        // VitePress treats `{{ }}` as Vue interpolation. Fenced code blocks are
+        // wrapped in v-pre automatically, but inline code spans are not, so
+        // placeholders like `{{Title}}` get compiled to an empty string. Force
+        // every inline code span to v-pre so its content is rendered verbatim.
+        config: (md) => {
+            const original = md.renderer.rules.code_inline;
+            md.renderer.rules.code_inline = (tokens, idx, options, env, self) => {
+                tokens[idx].attrSet("v-pre", "");
+                return original
+                    ? original(tokens, idx, options, env, self)
+                    : `<code${self.renderAttrs(tokens[idx])}>${md.utils.escapeHtml(tokens[idx].content)}</code>`;
+            };
+        },
+    },
     themeConfig: {
         i18nRouting: true,
         search: {
