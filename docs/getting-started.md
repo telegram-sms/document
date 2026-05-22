@@ -44,6 +44,8 @@ where  `xxxxxxxx:xxxxxxxxxxxxxx` is the token of your bot. You can find your bot
 
 * Click `Get recent chat ID`, and select the account that you want to use to listen on and receive the messages.
 
+* [Optional] If you are using a Telegram group with Topics enabled, fill in the `Topic ID` field so the bot delivers messages to the correct topic.
+
 * [Optional] Enter a trusted phone number, which will be used for SMS remote control. You can use this phone number to send SMS or restart the background service.
 
 * Turn on/off the following options based on your needs
@@ -53,7 +55,7 @@ where  `xxxxxxxx:xxxxxxxxxxxxxx` is the token of your bot. You can find your bot
 >* Monitor charger status - When charger status changes, send a message to notify you.
 >* Get chat command - Use chat commands to manage your bot (SMS management only if you disable this)
 >* Verification code automatic extraction - Automatically extract verification code from SMS (experimental function).
->* Display SIM card alias in dual card mode - Display SIM card alias on the SMS title.
+>* Hide phone numbers - Hide phone numbers in the forwarded messages to protect your privacy.
 >* Using DNS over HTTPS - Use secure encrypted DNS service (based on Cloudflare®)
 >* Carbon Copy - Forward notifications to other services such as Bark, Lark, or PushDeer. You can configure multiple services to receive copies of your messages.
 

@@ -36,6 +36,8 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 
 * 点击 `获取最近的对话ID`，选择您想要监听和接收消息的对话。
 
+* [可选] 如果您使用的是开启了话题（Topic）功能的 Telegram 群组，请填写 `话题 ID` 一栏，使机器人将消息发送到正确的话题中。
+
 * [可选] 填写一个可信的电话号码，这个电话号码用于使用短信远程控制。您可以使用这个号码来远程控制发送短信，重启后台服务。
 
 * 选择下方的附加选项
@@ -45,7 +47,7 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 >* 监控充电器状态 - 当充电器状态发生变动的时候，发送消息。
 >* 获取聊天命令 - 使用聊天命令管理机器人(不启用将仅使用短信管理)。
 >* 验证码自动提取 - 自动识别获取短信中的验证码(实验性功能)。
->* 显示SIM卡别名 - 在消息标题显示卡别名。
+>* 隐藏电话号码 - 在转发的消息中隐藏电话号码，以保护您的隐私。
 >* 使用 DNS over HTTPS - 使用安全带加密的DNS服务（基于 Cloudflare®）。
 >* 抄送 - 将通知转发到Bark、Lark或PushDeer等其他服务。您可以配置多个服务来接收您的消息副本。
 

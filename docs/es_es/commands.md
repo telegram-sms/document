@@ -56,7 +56,17 @@ o
 
 ## Comandos - Control del Bot mediante Chat
 
-Puede enviar el comando `/start` para obtener una lista de comandos disponibles.
+Puede enviar el comando `/start` para obtener una lista de comandos disponibles. Telegram SMS también muestra un teclado de comandos con botones rápidos (como `/getinfo`, `/sendsms`, `/sendussd` y `/listsms` cuando esté disponible), para que pueda ejecutar comandos sin tener que escribirlos.
+
+Los comandos integrados incluyen:
+
+- `/getinfo` - Muestra el nivel de batería actual, el estado de la conexión de red y la información de la tarjeta SIM.
+- `/log` - Muestra los últimos 10 registros del log.
+- `/sendsms` - Enviar un SMS.
+- `/sendussd` - Enviar una solicitud USSD (requiere el permiso de llamadas, Android 8.0 o posterior).
+- `/listsms` - Listar y administrar mensajes SMS (solo disponible cuando Telegram SMS está configurado como la aplicación de SMS predeterminada).
+- `/restart-service` - Reiniciar todos los servicios en segundo plano.
+- `/help` - Mostrar información de ayuda.
 
 ### Enviar SMS
 
@@ -91,6 +101,18 @@ Puede usar `/sendussd` para enviar solicitudes USSD con el formato:
 ```
 /sendussd {código USSD}
 ```
+
+### Listar y Administrar Mensajes SMS
+
+Cuando Telegram SMS está configurado como la aplicación de SMS predeterminada y se ha concedido el permiso de lectura de SMS, puede usar `/listsms` para examinar los mensajes almacenados:
+
+```
+/listsms          # listar todos los mensajes
+/listsms inbox    # listar los mensajes recibidos
+/listsms sent     # listar los mensajes enviados
+```
+
+La lista se muestra paginada. Use los botones en línea para cambiar de página, abrir un mensaje para ver su contenido completo o eliminar un mensaje (la eliminación pide confirmación primero).
 
 ### Gestión de Múltiples Bots en Grupos
 

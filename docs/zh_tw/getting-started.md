@@ -38,6 +38,8 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 
 * 點擊 `獲取最近的對話ID`，選擇您想要監聽和接收消息的對話。
 
+* [可選] 如果您使用的是開啟了話題（Topic）功能的 Telegram 群組，請填寫 `話題 ID` 一欄，使機器人將消息發送到正確的話題中。
+
 * [可選] 填寫一個可信的電話號碼，這個電話號碼用於使用短信遠程控制。您可以使用這個號碼來遠程控制發送短信，重啟後台服務。
 
 * 選擇下方的附加選項
@@ -47,7 +49,7 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 >* 監控充電器狀態 - 當充電器狀態發生變動的時候，發送消息。
 >* 獲取聊天命令 - 使用聊天命令管理機器人(不啟用將僅使用短信管理)。
 >* 驗證碼自動提取 - 自動識別獲取短信中的驗證碼(實驗性功能)。
->* 在雙卡模式下顯示SIM卡別名 - 在消息標題顯示卡別名。
+>* 隱藏電話號碼 - 在轉發的消息中隱藏電話號碼，以保護您的隱私。
 >* 使用 DNS over HTTPS - 使用安全帶加密的DNS服務（基於 Cloudflare®）。
 >* 抄送 - 將通知轉發到Bark、Lark或PushDeer等其他服務。您可以配置多個服務來接收您的消息副本。
 

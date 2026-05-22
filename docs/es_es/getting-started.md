@@ -31,15 +31,17 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 
 4. Haga clic en "Obtener ID de chat reciente" y seleccione la conversación que desea monitorear y recibir mensajes.
 
-5. [Opcional] Ingrese un número de teléfono de confianza, que se usará para el control remoto por SMS. Puede usar este número para controlar remotamente el envío de SMS y reiniciar el servicio en segundo plano.
+5. [Opcional] Si usa un grupo de Telegram con la función de Temas (Topics) activada, complete el campo `ID de tema` para que el bot envíe los mensajes al tema correcto.
 
-6. Seleccione las opciones adicionales:
+6. [Opcional] Ingrese un número de teléfono de confianza, que se usará para el control remoto por SMS. Puede usar este número para controlar remotamente el envío de SMS y reiniciar el servicio en segundo plano.
+
+7. Seleccione las opciones adicionales:
    - Respaldo SMS en error de red - Cuando falla el envío de mensajes por red, enviar por SMS al número de confianza
    - Monitorear estado de batería - Enviar información cuando cambie el estado de carga o la batería esté baja
    - Monitorear estado del cargador - Enviar mensaje cuando cambie el estado del cargador
    - Obtener comandos de chat - Usar comandos de chat para administrar el bot (si no se activa, solo se administrará por SMS)
    - Extracción automática de códigos - Identificar automáticamente códigos de verificación en SMS (función experimental)
-   - Mostrar alias de tarjeta SIM - Mostrar alias de tarjeta en el título del mensaje
+   - Ocultar números de teléfono - Ocultar los números de teléfono en los mensajes reenviados para proteger su privacidad
    - Usar DNS sobre HTTPS - Usar servicio DNS seguro con cifrado (basado en Cloudflare®)
    - Copia de carbón - Reenviar notificaciones a otros servicios como Bark, Lark o PushDeer. Puede configurar múltiples servicios para recibir copias de sus mensajes.
 
