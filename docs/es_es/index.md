@@ -24,7 +24,7 @@ hero:
       link: /es_es/privacy-policy
     - theme: alt
       text: Guía de desarrollo
-      link: /es_es/develop/manual
+      link: https://dev.telegram-sms.com/
 
 features:
   - title: "Sencillo"

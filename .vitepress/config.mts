@@ -34,6 +34,8 @@ export default defineConfigWithTheme<ExtendedConfig>({
                             { text: "Manual del usuario", link: "/es_es/user-manual" },
                             { text: "Empezar", link: "/es_es/getting-started" },
                             { text: "Comandos", link: "/es_es/commands" },
+                            { text: "Copia de carbón", link: "/es_es/carbon-copy" },
+                            { text: "Plantillas", link: "/es_es/templates" },
                         ],
                     },
                     {
@@ -56,7 +58,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                     {
                         title: "Herramientas en línea",
                         items: [
-                            { text: "Manual del usuario", link: "/es/user-manual" },
+                            { text: "Manual del usuario", link: "/es_es/user-manual" },
                             { text: "Generador de archivos de configuración", link: "https://config.telegram-sms.com/" },
                         ],
                     },
@@ -92,6 +94,8 @@ export default defineConfigWithTheme<ExtendedConfig>({
                             { text: "Руководство пользователя", link: "/ru_ru/user-manual" },
                             { text: "Начало работы", link: "/ru_ru/getting-started" },
                             { text: "Команды", link: "/ru_ru/commands" },
+                            { text: "Копирование", link: "/ru_ru/carbon-copy" },
+                            { text: "Шаблоны", link: "/ru_ru/templates" },
                         ],
                     },
                     {
@@ -150,6 +154,8 @@ export default defineConfigWithTheme<ExtendedConfig>({
                             { text: "ユーザーマニュアル", link: "/ja_jp/user-manual" },
                             { text: "はじめに", link: "/ja_jp/getting-started" },
                             { text: "コマンド", link: "/ja_jp/commands" },
+                            { text: "カーボンコピー", link: "/ja_jp/carbon-copy" },
+                            { text: "テンプレート", link: "/ja_jp/templates" },
                         ],
                     },
                     {
@@ -212,6 +218,8 @@ export default defineConfigWithTheme<ExtendedConfig>({
                             { text: "用户手册", link: "/zh_cn/user-manual" },
                             { text: "快速开始", link: "/zh_cn/getting-started" },
                             { text: "命令", link: "/zh_cn/commands" },
+                            { text: "抄送", link: "/zh_cn/carbon-copy" },
+                            { text: "消息模板", link: "/zh_cn/templates" },
                         ],
                     },
                     {
@@ -274,6 +282,8 @@ export default defineConfigWithTheme<ExtendedConfig>({
                             { text: "用户手冊", link: "/zh_tw/user-manual" },
                             { text: "快速開始", link: "/zh_tw/getting-started" },
                             { text: "命令", link: "/zh_tw/commands" },
+                            { text: "抄送", link: "/zh_tw/carbon-copy" },
+                            { text: "消息模板", link: "/zh_tw/templates" },
                         ],
                     },
                     {
@@ -334,6 +344,8 @@ export default defineConfigWithTheme<ExtendedConfig>({
                     { text: "User manual", link: "/user-manual" },
                     { text: "Getting started", link: "/getting-started" },
                     { text: "Commands", link: "/commands" },
+                    { text: "Carbon Copy", link: "/carbon-copy" },
+                    { text: "Templates", link: "/templates" },
                 ],
             },
             {

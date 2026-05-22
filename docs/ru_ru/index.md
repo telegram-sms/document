@@ -15,16 +15,16 @@ hero:
       link: https://github.com/telegram-sms/telegram-sms/releases
     - theme: alt
       text: Руководство пользователя
-      link: /ru/user-manual
+      link: /ru_ru/user-manual
     - theme: alt
       text: Вопросы и ответы
-      link: /ru/Q&A
+      link: /ru_ru/Q&A
     - theme: alt
       text: Политика конфиденциальности
-      link: /ru/privacy-policy
+      link: /ru_ru/privacy-policy
     - theme: alt
       text: Руководство по разработке
-      link: /ru/develop/manual
+      link: https://dev.telegram-sms.com/
 
 features:
   - title: "Простой"

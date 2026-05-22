@@ -24,7 +24,7 @@ hero:
       link: /ja_jp/privacy-policy
     - theme: alt
       text: 開発ガイド
-      link: /ja_jp/develop/manual
+      link: https://dev.telegram-sms.com/
 
 features:
   - title: "簡単"

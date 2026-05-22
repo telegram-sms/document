@@ -24,7 +24,7 @@ hero:
       link: /zh_cn/privacy-policy
     - theme: alt
       text: 开发指南
-      link: /zh_cn/develop/manual
+      link: https://dev.telegram-sms.com/
 
 features:
   - title: "简单"
