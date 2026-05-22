@@ -38,9 +38,9 @@ You can refer to `Choose how you're notified > Turn notifications on or off for 
 
 ## > I want to change the API server address
 
-We will NOT provide any function to change the API server address in the APP.
+Telegram SMS provides a **Set API Address** option in the app's overflow menu (⋮). It is intended for pointing the app at your own [self-hosted Telegram Bot API server](https://dev.telegram-sms.com/self_hosted_bot_api).
 
-**We make this decision due to the concern of your privacy and communication security. Changing the API server is just like GSM hijacking + SMS sniffing, which may cause the loss of your property.**
+**Only switch to a server you fully control and trust. Pointing the app at an untrusted API server is just like GSM hijacking + SMS sniffing, and may cause the loss of your property — every message and your bot token pass through whichever server you configure.**
 
 You can use SNI proxy to securely proxy `api.telegram.org`, which can avoid the leak of data when forwarding the data packets and protect the packets from being stolen by third-parties. You can implement this function by using the Stream module in Nginx, which is running in the 4th layer of OSI and can run with the service in the 7th layer at the same time. This will make sure you can use Nginx to build a website when using the SNI proxy. You can also use Sniproxy to achieve the same goal.
 

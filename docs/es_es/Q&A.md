@@ -39,9 +39,9 @@ Información relacionada: https://support.google.com/android/answer/9079661?hl=e
 
 ### > Quiero cambiar la dirección del servidor API
 
-No proporcionamos ninguna función de configuración para cambiar la dirección del servidor API en el programa.
+Telegram SMS ofrece una opción **Establecer dirección de API** en el menú de desbordamiento (⋮) de la aplicación. Está pensada para apuntar la aplicación a su propio [servidor de Telegram Bot API autoalojado](https://dev.telegram-sms.com/self_hosted_bot_api).
 
-**Esto se debe a consideraciones de privacidad y seguridad de las comunicaciones. Cambiar la dirección del API es similar a un secuestro GSM + sniffing de SMS, lo que puede causar pérdidas financieras.**
+**Cambie únicamente a un servidor que controle y en el que confíe plenamente. Apuntar la aplicación a un servidor API no confiable es similar a un secuestro GSM + sniffing de SMS, y puede causar pérdidas financieras: todos sus mensajes y su token de bot pasan por el servidor que configure.**
 
 Puede usar el método de proxy SNI para proxy de manera segura `api.telegram.org`, lo que evitará que los paquetes de datos se descompriman durante la transmisión y protegerá los paquetes de datos de ser obtenidos por terceros. Puede usar el módulo Stream de Nginx para implementar esta función. Este módulo opera en la capa 4 del modelo OSI y puede ejecutarse simultáneamente con servicios que operan en la capa 7. Esto garantizará que pueda alojar un sitio web mientras usa el proxy SNI. También puede usar Sniproxy para lograr la misma función.
 
