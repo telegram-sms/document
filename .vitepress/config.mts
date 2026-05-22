@@ -36,6 +36,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                             { text: "Comandos", link: "/es_es/commands" },
                             { text: "Copia de carbón", link: "/es_es/carbon-copy" },
                             { text: "Plantillas", link: "/es_es/templates" },
+                            { text: "Transferir configuración", link: "/es_es/transfer-config" },
                         ],
                     },
                     {
@@ -96,6 +97,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                             { text: "Команды", link: "/ru_ru/commands" },
                             { text: "Копирование", link: "/ru_ru/carbon-copy" },
                             { text: "Шаблоны", link: "/ru_ru/templates" },
+                            { text: "Перенос конфигурации", link: "/ru_ru/transfer-config" },
                         ],
                     },
                     {
@@ -156,6 +158,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                             { text: "コマンド", link: "/ja_jp/commands" },
                             { text: "カーボンコピー", link: "/ja_jp/carbon-copy" },
                             { text: "テンプレート", link: "/ja_jp/templates" },
+                            { text: "設定の転送", link: "/ja_jp/transfer-config" },
                         ],
                     },
                     {
@@ -220,6 +223,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                             { text: "命令", link: "/zh_cn/commands" },
                             { text: "抄送", link: "/zh_cn/carbon-copy" },
                             { text: "消息模板", link: "/zh_cn/templates" },
+                            { text: "传输配置", link: "/zh_cn/transfer-config" },
                         ],
                     },
                     {
@@ -284,6 +288,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                             { text: "命令", link: "/zh_tw/commands" },
                             { text: "抄送", link: "/zh_tw/carbon-copy" },
                             { text: "消息模板", link: "/zh_tw/templates" },
+                            { text: "傳輸配置", link: "/zh_tw/transfer-config" },
                         ],
                     },
                     {
@@ -361,6 +366,7 @@ export default defineConfigWithTheme<ExtendedConfig>({
                     { text: "Commands", link: "/commands" },
                     { text: "Carbon Copy", link: "/carbon-copy" },
                     { text: "Templates", link: "/templates" },
+                    { text: "Transfer Configuration", link: "/transfer-config" },
                 ],
             },
             {
