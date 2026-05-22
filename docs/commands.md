@@ -110,6 +110,15 @@ It will send `example.com` to the number `+441807391001` by SMS.
 
 When using `/sendsms` without specifying a SIM card number on a dual SIM device, you will be prompted to select which SIM card to use.
 
+### Interactive SMS sending
+
+In contrast to the direct multi-line `/sendsms` format described above, sending `/sendsms` with no arguments starts an interactive, step-by-step flow. The bot prompts you for each piece of information one at a time using Telegram's ForceReply (the reply box is pre-focused), so you simply reply to each prompt:
+
+1. On dual-SIM devices (when no SIM number was given on the command), the bot first shows an inline keyboard to choose "SIM 1" or "SIM 2". Single-SIM devices skip this step.
+2. The bot then asks for the recipient phone number — you reply with the number.
+3. The bot then asks for the message content — you reply with the text.
+4. The bot sends the SMS via the chosen SIM and confirms.
+
 ### Reply to an SMS
 
 You can use the reply function of Telegram to reply to the SMS and missed calls quickly.

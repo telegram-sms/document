@@ -90,6 +90,15 @@ o
 
 Cuando use `/sendsms` sin especificar el número de tarjeta SIM en un dispositivo con doble SIM, el sistema le pedirá que seleccione qué tarjeta SIM usar.
 
+### Envío interactivo de SMS
+
+A diferencia del formato directo de varias líneas de `/sendsms` descrito arriba, enviar `/sendsms` sin argumentos inicia un flujo interactivo paso a paso. El bot le solicita cada dato de uno en uno mediante ForceReply de Telegram (el cuadro de respuesta queda enfocado), por lo que solo tiene que responder a cada solicitud:
+
+1. En dispositivos con doble SIM (cuando no se indicó el número de SIM en el comando), el bot muestra primero un teclado en línea para elegir «SIM 1» o «SIM 2». Los dispositivos con una sola SIM omiten este paso.
+2. A continuación, el bot pide el número de teléfono del destinatario: usted responde con el número.
+3. Después, el bot pide el contenido del mensaje: usted responde con el texto.
+4. El bot envía el SMS a través de la tarjeta SIM elegida y lo confirma.
+
 ### Responder SMS
 
 Puede usar la función de respuesta de Telegram para responder rápidamente a SMS recibidos y llamadas perdidas.
